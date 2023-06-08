@@ -1,5 +1,5 @@
 # portfolio
-project_서울앵무새
+project_서울앵무새 ![backgroundEx](./images/parrot.png)
 
 ## 230608 프로젝트 기록
 
@@ -9,4 +9,3 @@ __서울앵무새 PC, 모바일 디자인작업 완료__
     -> 서울앵무새의 느낌을 살리기 위해 원색의 색감을 살려 작업을 진행
     -> 캐릭터를 최대한 살리기 위해 영상작업 및 일러스트 작업 추가
 
-![backgroundEx](./images/parrot.png)
