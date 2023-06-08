@@ -1,5 +1,6 @@
-# portfolio
-project_서울앵무새 ![backgroundEx](./images/parrot.png)
+# Project_서울앵무새
+![backgroundEx](./images/parrot.png)
+
 
 ## 230608 프로젝트 기록
 
