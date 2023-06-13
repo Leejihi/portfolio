@@ -133,6 +133,9 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 
+  background: url(./images/star.png) no-repeat 33% 50% / 3%,
+    url(./images/star.png) no-repeat 67% 50% / 3%;
+
   display: flex;
 }
 
@@ -141,10 +144,10 @@
   height: 100%;
 }
 .main .m-point .logo h3:nth-child(1) a {
-  background: url(./images/logo_seongsu.png) no-repeat 50% / 70%;
+  background: url(./images/logo_seongsu2.png) no-repeat 50% / 55%;
 }
 .main .m-point .logo h3:nth-child(2) a {
-  background: url(./images/logo_jeju.png) no-repeat 50% / 70%;
+  background: url(./images/logo_jeju2.png) no-repeat 50% / 55%;
 }
 .main .m-point .logo h3:nth-child(3) a {
   background: url(./images/logo_yongsan.png) no-repeat 50% / 55%;

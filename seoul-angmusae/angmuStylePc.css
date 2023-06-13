@@ -35,19 +35,28 @@
   font-size: var(--font-size-17);
 }
 
+.header .h-nav nav .global-nav li:hover a {
+  background: url(./images/star_yellow.gif) no-repeat 0 50% / 13%,
+    url(./images/star_yellow.gif) no-repeat 100% 50% / 13%;
+}
+
+.header .h-nav nav .global-nav li:nth-child(3):hover a {
+  background: url(./images/star_yellow.gif) no-repeat 12% 50% / 13%,
+    url(./images/star_yellow.gif) no-repeat 87% 50% / 13%;
+}
+
 /* .h-nav .sub-nav */
 
 .header .h-nav .sub-nav {
   position: absolute;
   right: 50px;
 
-  font-size: 1rem;
+  font-size: var(--font-size-17);
 }
 
 .header .h-nav .sub-nav li:last-child a {
   font-size: var(--font-size-12);
   border: 1px solid #000;
-  padding: 0 8px;
 }
 
 /*********** main Reveiw ***********/
