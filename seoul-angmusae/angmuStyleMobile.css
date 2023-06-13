@@ -1,0 +1,41 @@
+@charset 'utf=8';
+
+/* 변수선언 */
+@import url(./variable.css);
+
+/* 모바일 440px */
+
+/*********** main ***********/
+
+/* main common */
+
+.main section .m-imgBox .imgBox .img-title {
+  font-size: var(--font-size-14);
+}
+
+/* point */
+
+.main .m-point .point .p-box .p-box1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
+}
+.main .m-point .point .p-box p {
+  font-size: var(--font-size-17);
+
+  position: absolute;
+  bottom: 5vw;
+  right: 6vw;
+}
+/*********** main Reveiw ***********/
+.main .m-reveiw .reveiw {
+  gap: 30px;
+}
+
+/*********** footer ***********/
+
+footer .f-me a {
+  font-size: var(--font-size-14);
+}
