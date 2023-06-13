@@ -153,6 +153,8 @@ body {
   width: 100%;
   height: 82vh;
   overflow: hidden;
+
+  position: relative;
 }
 .header .h-banner .video {
   min-width: 100%;
@@ -160,6 +162,11 @@ body {
   width: auto;
   height: 100%;
   object-fit: cover;
+
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-20%, -50%);
 }
 
 /*********** main ***********/

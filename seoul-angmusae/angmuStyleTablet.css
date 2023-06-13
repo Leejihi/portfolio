@@ -63,6 +63,13 @@
   height: 95vh;
 }
 
+.header .h-banner .video {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /*********** main ***********/
 
 /* main common */
