@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>haker.jihee</title>
-        <!-- reset -->
-        <link rel="stylesheet" href="./common/reset.css">
 
-        <!-- 모바일 우선 -->
-        <link rel="stylesheet" href="./angmuStyle.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./common/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="120x120" href="./common/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./common/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./common/favicon/favicon-16x16.png">
+<link rel="manifest" href="./common/favicon/site.webmanifest">  
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./common/reset.css">
+
+    <!-- 모바일 우선 -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css" media="(width >=500px)">
+    <!-- 테블릿 버전 -->
+    <link rel="stylesheet" href="./tablet.css" media="(width >=700px)">
+    <!-- 피씨 버전 -->
+    <link rel="stylesheet" href="./pc.css" media="(width >=1000px)">
         
     <script src="../common/jquery-3.7.0.min.js"></script>
 </head>
@@ -20,6 +33,7 @@
         <div class="h-nav">
             <h1><a href="#">지희로고</a></h1>
             <div class="menu-btn">햄버거메뉴</div>
+            <div class="x-btn">닫힘버튼</div>
             <div class="nav">
                 <menu class="global-gnb">
                     <li><a href="#">Home</a></li>
