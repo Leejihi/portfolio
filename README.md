@@ -1,9 +1,13 @@
 # Portfolio_작업일지
-![backgroundEx](./images/me3.gif)
+![backgroundEx](./images/me2.gif)
 
 ## 230625 프로젝트 기록
 
-__포트폴리오 구성 수정__
+__ 230626 : 포트폴리오 index 페이지 디자인 변경__
+
+    변경된 시안에 맞춰 index.html 작성
+
+__ 230625 : 포트폴리오 구성 수정__
 
     포트폴리오를 어떻게 구성할지 내용 정리 
     -> index.html 작성, 이미지 정리
