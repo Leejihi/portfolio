@@ -4,7 +4,9 @@
 :root {
   --font-family-title: 'Roboto', sans-serif;
   --font-family-point: 'Knewave', cursive;
-  --font-family-p: 'Noto Sans KR', -apple-system, BlinkMacSystemFont;
+  --font-family-p: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Segoe UI',
+    'Malgun Gothic', 돋움, sans-serif;
 
   --font-size-12: 0.75rem;
   --font-size-18: 1.125rem;
@@ -28,5 +30,5 @@
 
   --margin: 5vw;
 
-  --color-gray: #16FE17;
+  --color-gray: #16fe17;
 }

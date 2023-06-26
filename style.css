@@ -3,6 +3,8 @@
 /* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;700&display=swap');
 
+/* Pretendard Variable */
+@import url('./common/pretendardvariable-dynamic-subset.css');
+
 /* 변수선언 */
 @import url(./variable.css);
-
