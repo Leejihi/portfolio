@@ -1,7 +1,7 @@
 # Portfolio_작업일지
 ![backgroundEx](./images/me2.gif)
 
-## 230625 프로젝트 기록
+## Project_Portfolio 기록
 
 __230626 : 포트폴리오 index 페이지 디자인 변경__
 
