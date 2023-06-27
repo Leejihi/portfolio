@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +10,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./common/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="120x120" href="./common/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./common/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./common/favicon/favicon-16x16.png">
-<link rel="manifest" href="./common/favicon/site.webmanifest">  
+    <link rel="icon" type="image/png" sizes="32x32" href="./common/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./common/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./common/favicon/site.webmanifest">
 
     <!-- reset -->
     <link rel="stylesheet" href="./common/reset.css">
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="./tablet.css" media="(width >=700px)">
     피씨 버전
     <link rel="stylesheet" href="./pc.css" media="(width >=1000px)"> -->
-        
+
     <script src="../common/jquery-3.7.0.min.js"></script>
 </head>
 
@@ -31,9 +32,12 @@
     <!-- header -->
     <header>
         <div class="h-nav">
-            <h1><a href="#">지희로고</a></h1>
-            <div class="menu-btn">햄버거메뉴</div>
-            <div class="x-btn">닫힘버튼</div>
+            <div class="nav-title">
+                <h1><a href="#">지희로고</a></h1>
+                <div class="menu-btn">햄버거메뉴</div>
+                <!-- <div class="x-btn">닫힘버튼</div> -->
+            </div>
+
             <div class="nav">
                 <menu class="global-gnb">
                     <li><a href="#">Home</a></li>
@@ -65,7 +69,7 @@
                     <p>*카카오톡 채널 운영 시간 9am ~ 5pm</p>
                 </li>
                 <li>Haker.jihee</li>
-                <li><a href="#" class="close-btn">닫기</a></li>
+                <li><a href="#" class="close-btn">닫기 X</a></li>
             </ul>
         </div>
     </header>
@@ -75,105 +79,133 @@
         <section class="m-banner">
             <h3>Hi. my name is</h3>
             <h2>Lee Ji Hee</h2>
+            <div class="banner">메인이미지</div>
             <div class="m-txt">
                 <h3>Who i am</h3>
-                <p>나는 매일이 재미있어.왜냐구?? <span class="block">눈에 보이는 모든 것에 흥미가 있고 그것에 대해 생각하고 수많은 이야기들을 만들거든.</span> 
-                <span class="block">그리고 그것은 내 두손으로 만들어 많은 사람들과 소통할 수 있어.</span>
-                <span class="block">엄청 즐거운 일이야~!!</span>
-                <span class="block">많은 사람들과 더 다양하게 소통하기 위해 나는 앞으로도</span>
-                <span class="block">'더 새로운 것, 더 재밌는 것'   에 도전할거야!</span></p>
+                <div class="p-text">
+                    <p>나는 매일이 재미있어.왜냐구?? <span class="block">눈에 보이는 모든 것에 흥미가 있고 그것에 대해 생각하고 수많은 이야기들을 만들거든.</span>
+                        <span class="block">그리고 그것은 내 두손으로 만들어 많은 사람들과 소통할 수 있어.</span>
+                        <span class="block">엄청 즐거운 일이야~!!</span>
+                        <span class="block">많은 사람들과 더 다양하게 소통하기 위해 나는 앞으로도</span>
+                        <span class="block">'더 새로운 것, 더 재밌는 것' 에 도전할거야!</span>
+                    </p>
+                    <div class="btn-about">
+                        <a href="#">About me</a>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-        <section class="dragslide">
-            <h2 class="slidebox" id="slide1">Creative</h2>
-            <h2 class="slidebox" id="slide2">Challenge</h2>
+        <section class="slide">
+            <div class="slidebox" id="slide1">
+                <h2>Creative</h2>
+            </div>
+            <div class="slidebox" id="slide2">
+                <h2>Challenge</h2>
+            </div>
         </section>
 
 
         <section class="myWeb">
-            <div class="web1">
-                <h3>seoul-angmusae</h3>
-                <p>responsive web</p>
+            <div class="web web1">
+                <div class="web-txt">
+                    <h3>seoul-angmusae</h3>
+                    <p>responsive web</p>
+                </div>
             </div>
-            <div class="web2">
-                <h3>ABOUT VANS</h3>
-                <p>responsive web</p>
+            <div class="web web2">
+                <div class="web-txt">
+                    <h3>ABOUT VANS</h3>
+                    <p>responsive web</p>
+                </div>
             </div>
-            <div class="web3">
-                <h3>plant book</h3>
-                <p>UX/UI design</p>
+            <div class="web web3">
+                <div class="web-txt">
+                    <h3>plant book</h3>
+                    <p>UI/UX design</p>
+                </div>
             </div>
-            <div class="web4">
-                <h3>untitle</h3>
-                <p>untitle</p>
+            <div class="web web4">
+                <div class="web-txt">
+                    <h3>untitle</h3>
+                    <p>untitle</p>
+                </div>
             </div>
         </section>
 
 
         <section class="career">
-            <ul class="imgBox">
-                <li class="img1">kt wiz</li>
-                <li class="img2">RollyShube</li>
-                <li class="img3">neflab</li>
-                <li class="img4">hyundai</li>               
-                <li class="img5">고용노동부</li>               
-                <li class="img6">pancakes original story</li>               
-            </ul>
-
-            <div class="txtBox">
-                <div class="jobBox box1">
-                    <h3>01.</h3>
-                    <div class="p-txt">
-                        <p class="title">kt wiz</p>
-                        <p>kt sports main designer / 2020년, 2021년 포스트 시즌 구장사인물, 전광판, 홍보 디자인</p>
+            <h2>My Career</h2>
+            <div class="line">라인</div>
+            <div class="careerBox">
+                <ul class="imgBox">
+                    <li class="img1">kt wiz</li>
+                    <li class="img2">RollyShube</li>
+                    <li class="img3">neflab</li>
+                    <li class="img4">hyundai</li>
+                    <li class="img5">고용노동부</li>
+                    <li class="img6">pancakes original story</li>
+                </ul>
+    
+                <div class="txtBox">
+                    <div class="jobBox box1">
+                        <h3>01.</h3>
+                        <div class="p-txt">
+                            <p class="title">kt wiz</p>
+                            <p>kt sports main designer / 2020년, 2021년 포스트 시즌 구장사인물, 전광판, 홍보 디자인</p>
+                        </div>
+                    </div>
+                    <div class="jobBox box2">
+                        <h3>02.</h3>
+                        <div class="p-txt">
+                            <p class="title">rollyshube</p>
+                            <p>브랜드 디자인 / 롤리슈브 아이덴티티 정립 및 광고, 패키지, 웹 디자인</p>
+                        </div>
+                    </div>
+                    <div class="jobBox box3">
+                        <h3>03.</h3>
+                        <div class="p-txt">
+                            <p class="title">neflab</p>
+                            <p>박람회 프로젝트 참여 / 신기술 일러스트 작업, 박람회 부스 디자인 및 인쇄디자인</p>
+                        </div>
+                    </div>
+                    <div class="jobBox box4">
+                        <h3>04.</h3>
+                        <div class="p-txt">
+                            <p class="title">hyundai</p>
+                            <p>현대 남양사업부 / 직원 오리엔테이션 프로그램 카드뉴스 디자인</p>
+                        </div>
+                    </div>
+                    <div class="jobBox box5">
+                        <h3>05.</h3>
+                        <div class="p-txt">
+                            <p class="title">고용노동부</p>
+                            <p>고용노동부 x 한국고용정보원 / 사회초년생을 위한 직업훈련 강의 PPT 디자인 30개</p>
+                        </div>
+                    </div>
+                    <div class="jobBox box6">
+                        <h3>06.</h3>
+                        <div class="p-txt">
+                            <p class="title">pancakes original story</p>
+                            <p>브랜드 디자인 / 브랜드 아이덴티티 정립 및 패키지, 메뉴, 포스터, 캐릭터 디자인</p>
+                        </div>
                     </div>
                 </div>
-                <div class="jobBox box2">
-                    <h3>02.</h3>
-                    <div class="p-txt">
-                        <p class="title">RollyShube</p>
-                        <p>브랜드 디자인 : 롤리슈브 아이덴티티 정립 및 광고, 패키지, 웹 디자인</p>
-                    </div>
-                </div>
-                <div class="jobBox box3">
-                    <h3>03.</h3>
-                    <div class="p-txt">
-                        <p class="title">neflab</p>
-                        <p>박람회 프로젝트 참여 / 신기술 일러스트 작업, 박람회 부스 디자인 및 인쇄디자인</p>
-                    </div>
-                </div>
-                <div class="jobBox box4">
-                    <h3>04.</h3>
-                    <div class="p-txt">
-                        <p class="title">hyundai</p>
-                        <p>현대 남양사업부 / </p>
-                    </div>
-                </div>
-                <div class="jobBox box5">
-                    <h3>05.</h3>
-                    <div class="p-txt">
-                        <p class="title">고용노동부</p>
-                        <p>웹 사이트 구축 및 디자인 웹 사이트 구축 및 디자인 웹 사이트 구축 및 디자인</p>
-                    </div>
-                </div>
-                <div class="jobBox box6">
-                    <h3>06.</h3>
-                    <div class="p-txt">
-                        <p class="title">pancakes original story</p>
-                        <p>웹 사이트 구축 및 디자인 웹 사이트 구축 및 디자인 웹 사이트 구축 및 디자인</p>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </section>
 
- 
+
         <section class="skill">
             <div class="speaker">
                 <p>I'm the best speaker<br>to talk to the world<br>with my design.</p>
+                <div class="line">밑줄</div>
             </div>
-            <h2>My skills & Tools</h2>
+            <div class="skillTitle">
+                <h2>My skills & Tools</h2>
+                <img src="./images/pen.gif" alt="펜일러스트">
+            </div>
+
             <div class="skillBox">
                 <div class="tool">
                     <h3>HTML5 / CSS3</h3>
@@ -194,8 +226,8 @@
                     <h3>Git, Github</h3>
                     <p>분산 버전 관리</p>
                     <p>GitHub를 통해 팀 프로젝트 실시간 공유 및 협업</p>
-                    
-                    <h3>UI 디자인</h3>
+
+                    <h3>UI Design</h3>
                     <p>사용자 분석을 통한 UX기반 UI디자인</p>
                 </div>
                 <div class="tool">
@@ -208,8 +240,8 @@
                         <h4>Figma</h4>
                         <p>프로토타입 제작</p>
                     </div>
-                  
-                    <p><strong>photoshop / illustrator /INDESIGN / After Effects</strong></p>
+
+                    <p><strong>PHOTOSHOP / ILLUSTRATOR /INDESIGN / AFETER EFFECTS</strong></p>
                     <p>그래픽, 편집, 패키지, 일러스트, 영상 디자인</p>
                 </div>
             </div>
@@ -226,10 +258,13 @@
     <!-- footer -->
     <footer>
         <div class="together">
-            <a href="#"><p>Let’s work together</p></a>            
+            <a href="#">
+                <p>Let’s work together</p>
+            </a>
         </div>
     </footer>
 
     <div class="up-btn">위로</div>
 </body>
+
 </html>

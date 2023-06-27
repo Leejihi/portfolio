@@ -20,15 +20,19 @@
   --font-size-40: 2.5rem;
   --font-size-45: 2.8125rem;
   --font-size-50: 3.125rem;
+  --font-size-70: 4.375rem;
+  --font-size-73: 4.5625rem;
   --font-size-75: 4.6875rem;
   --font-size-80: 5rem;
   --font-size-85: 5.3125rem;
   --font-size-120: 7.5rem;
   --font-size-150: 9.375rem;
   --font-size-230: 14.375rem;
+  --font-size-350: 21.875rem;
+  --font-size-380: 23.75rem;
   --font-size-400: 25rem;
 
   --margin: 5vw;
 
-  --color-gray: #16fe17;
+  --color-point: #16fe17;
 }
