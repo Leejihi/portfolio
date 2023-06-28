@@ -600,8 +600,8 @@ footer .together a {
   border-radius: 50%;
 
   position: fixed;
-  bottom: 5vw;
-  right: 10px;
+  bottom: 3vw;
+  right: 22px;
   background: rgba(255, 255, 255, 0.7) url(./images/arrow-up-bk.png) no-repeat
     50% / 30%;
 }
