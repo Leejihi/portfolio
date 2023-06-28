@@ -324,6 +324,7 @@ main .slide .slidebox h2 {
 main .slide #slide1 {
   background-color: #000;
   color: #fff;
+  display: none;
 }
 
 /* 마우스 이벤트 전엔 숨김 페이지 */
@@ -398,8 +399,8 @@ main .myWeb .web4:hover {
 /********* section4 .career *********/
 main .career {
   width: 100%;
-  overflow: hidden;
   margin-top: 10vw;
+  overflow: hidden;
 }
 main .career h2 {
   font-family: var(--font-family-point);
