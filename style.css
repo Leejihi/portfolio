@@ -398,6 +398,7 @@ main .myWeb .web4:hover {
 /********* section4 .career *********/
 main .career {
   width: 100%;
+  overflow: hidden;
   margin-top: 10vw;
 }
 main .career h2 {
