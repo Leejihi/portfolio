@@ -289,7 +289,7 @@ main .m-banner .m-txt .p-text .btn-about {
   height: 50px;
   color: #fff;
   border-radius: 30px;
-  background:#000  url(./images/arrow2.png) no-repeat 90% 50% / 20px; 
+  background: #000 url(./images/arrow2.png) no-repeat 90% 50% / 20px;
 }
 
 main .m-banner .m-txt .p-text .btn-about > a {
@@ -311,9 +311,8 @@ main .slide {
 main .slide .slidebox {
   width: 100%;
   height: 130vh;
-  
 }
-main .slide .slidebox  h2 {
+main .slide .slidebox h2 {
   text-align: center;
   line-height: 140vh;
 
@@ -331,14 +330,12 @@ main .slide #slide2 {
   background: url(./images/me2.gif) no-repeat 48% 18% / 25%;
 }
 
-
-
 /********* section3 .myWeb *********/
 main .myWeb {
   width: 100%;
   height: 80vh;
 
-  display: flex; 
+  display: flex;
 }
 main .myWeb .web {
   width: 25%;
@@ -397,7 +394,6 @@ main .myWeb .web4:hover {
   background: url(./images/img2.jpg) no-repeat 50% / cover;
 }
 
-
 /********* section4 .career *********/
 main .career {
   width: 100%;
@@ -420,7 +416,7 @@ main .career .careerBox {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template: repeat(6, 1fr) / repeat(2, 1fr) ;
+  grid-template: repeat(6, 1fr) / repeat(2, 1fr);
 }
 main .career .careerBox .imgBox {
   overflow: hidden;
@@ -435,9 +431,8 @@ main .career .careerBox .imgBox .img1 {
   background: url(./images/career-kt.jpg) no-repeat 50% / 40%;
 }
 
-
 main .career .careerBox .txtBox {
-width: 100%;
+  width: 100%;
 }
 main .career .careerBox .txtBox .jobBox {
   display: flex;
@@ -449,15 +444,15 @@ main .career .careerBox .txtBox .jobBox {
   transition: 0.3s;
 }
 main .career .careerBox .txtBox .jobBox:hover {
-opacity: 1;
-transform: translateX(10px);
+  opacity: 1;
+  transform: translateX(10px);
 }
 main .career .careerBox .txtBox .jobBox h3 {
-font-weight: 500;
-font-size: var(--font-size-70);
+  font-weight: 500;
+  font-size: var(--font-size-70);
 }
 main .career .careerBox .txtBox .jobBox .p-txt {
-  font-family: var(--font-family-p); 
+  font-family: var(--font-family-p);
 }
 main .career .careerBox .txtBox .jobBox .p-txt .title {
   font-size: var(--font-size-36);
@@ -468,7 +463,6 @@ main .career .careerBox .txtBox .box5 .p-txt .title {
   font-size: var(--font-size-32);
   font-weight: 700;
 }
-
 
 /********* section5 .skill *********/
 
@@ -513,9 +507,9 @@ main .skill .skillBox {
 }
 
 main .skill .skillBox .tool {
- padding: 70px 60px;
- border: 1px solid #000;
- border-radius: 20px 0 0 0;
+  padding: 70px 60px;
+  border: 1px solid #000;
+  border-radius: 20px 0 0 0;
 }
 
 main .skill .skillBox .tool:nth-child(2),
@@ -549,4 +543,47 @@ main .skill .skillBox .tool .toolBox h4 {
 
 main .skill .skillBox .tool:last-child .toolBox:nth-child(3) {
   margin-bottom: 20px;
+}
+
+/********* section6 .answer *********/
+main .answer {
+  width: 100%;
+  margin-top: 13vw;
+  text-align: center;
+}
+main .answer h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-150);
+  line-height: 1.2;
+}
+
+main .answer .line {
+  width: 100%;
+  height: 30vh;
+  text-indent: -99999px;
+  background: url(./images/line-vertical.png) no-repeat 50% 25% / 60px;
+}
+
+main .answer p {
+  font-size: var(--font-size-24);
+  font-weight: 700;
+  margin-bottom: 13vw;
+}
+
+/********* footer *********/
+
+footer .together {
+  width: 100%;
+  height: 15vw;
+  background-color: #000;
+}
+footer .together a {
+  display: block;
+  font-size: var(--font-size-85);
+  font-weight: 500;
+  color: #fff;
+  margin-left: 5vw;
+  padding-top: 7.5vw;
+
+  background: url(./images/arrow.png) no-repeat 30% 100% / 120px;
 }
