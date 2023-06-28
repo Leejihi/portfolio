@@ -467,6 +467,11 @@ main .career .careerBox .txtBox .box5 .p-txt .title {
 
 /********* section5 .skill *********/
 
+main .skill {
+  width: 100%;
+  overflow: hidden;
+}
+
 main .skill .speaker {
   font-size: var(--font-size-30);
   margin-left: 5vw;
