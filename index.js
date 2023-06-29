@@ -17,4 +17,16 @@ $(function () {
   });
 });
 
+// 슬라이드
+
+$(window).on('scroll', () => {
+  let slideHeight = $('.slide').offset().top - 300;
+
+  if (scrollY > slideHeight) {
+      $('.slide').addClass('start');
+  } else {
+      $('.slide').removeClass('start');
+  }
+});
+
 // 커리어 호버시 이미지 보여지도록!!
