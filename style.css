@@ -63,6 +63,7 @@ header .h-nav .nav-title .menu-btn {
   cursor: pointer;
 }
 
+
 /********* menu 클릭전까지 숨김 *********/
 header .h-nav .nav {
   width: 26.55vw;
@@ -346,7 +347,7 @@ main .slide #slide2 {
   width: 0px;
   overflow: hidden;
   transform: translateX(100%);
-  transition: 2s;
+  transition: 2.5s;
 }
 
 .slide.start #slide2 {

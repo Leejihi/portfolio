@@ -20,7 +20,7 @@ $(function () {
 // 슬라이드
 
 $(window).on('scroll', () => {
-  let slideHeight = $('.slide').offset().top - 500;
+  let slideHeight = $('.slide').offset().top - 550;
 
   if (scrollY > slideHeight) {
       $('.slide').addClass('start');
@@ -28,5 +28,6 @@ $(window).on('scroll', () => {
       $('.slide').removeClass('start');
   }
 });
+
 
 // 커리어 호버시 이미지 보여지도록!!
