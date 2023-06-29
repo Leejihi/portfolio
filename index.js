@@ -20,7 +20,7 @@ $(function () {
 // 슬라이드
 
 $(window).on('scroll', () => {
-  let slideHeight = $('.slide').offset().top - 550;
+  let slideHeight = $('.slide').offset().top - 500;
 
   if (scrollY > slideHeight) {
       $('.slide').addClass('start');
