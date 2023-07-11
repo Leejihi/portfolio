@@ -41,8 +41,13 @@
         <div class="h-nav">
             <div class="nav-title">
                 <h1><a href="#">지희로고</a></h1>
-                <div class="menu-btn">햄버거메뉴</div>
-                <!-- <div class="x-btn">닫힘버튼</div> -->
+                <div id="toggle_btn" class="flex_wrap">
+                    <div class="mobile_icon">
+                        <span class="bar1 transit"></span>
+                        <span class="bar2 transit"></span>
+                        <span class="bar3 transit"></span>
+                    </div>
+                </div>
             </div>
 
             <div class="nav">
@@ -96,9 +101,10 @@
                         <span class="block">많은 사람들과 더 다양하게 소통하기 위해 나는 앞으로도</span>
                         <span class="block">'더 새로운 것, 더 재밌는 것' 에 도전할거야!</span>
                     </p>
-                    <div class="btn-about">
+                    <!-- <div class="btn-about">
                         <a href="#">About me</a>
-                    </div>
+                    </div> -->
+                    <button class="button"><a href="#">About Me</a></button>
                 </div>
             </div>
         </section>
@@ -144,7 +150,12 @@
 
         <section class="career">
             <h2>My Career</h2>
-            <div class="line">라인</div>
+
+            <svg class="obj">
+                <path
+                    d="M65.8 1c.9 11 1.6 30.5 2.5 38 1.5 12 5 39-18 52-18.5 10.5-33.5 11.5-41 5S-.9 71.9 5.8 70c12.5-3.5 30.5 13 37.5 36s6.5 40 4.5 53.5-19.5 65-20 71.5" />
+            </svg>
+
             <div class="careerBox">
                 <ul class="imgBox">
                     <li class="img1">kt wiz</li>
@@ -257,8 +268,12 @@
 
         <section class="answer">
             <h2>Can't Find Your<br>Answer?</h2>
-            <div class="line"></div>
+            <svg class="obj">
+                <path
+                    d="M65.8 1c.9 11 1.6 30.5 2.5 38 1.5 12 5 39-18 52-18.5 10.5-33.5 11.5-41 5S-.9 71.9 5.8 70c12.5-3.5 30.5 13 37.5 36s6.5 40 4.5 53.5-19.5 65-20 71.5" />
+            </svg>
             <p>I am here to help.</p>
+            <img src="./images/me3.gif" alt="윙크하는 캐릭터">
         </section>
 
     </main>

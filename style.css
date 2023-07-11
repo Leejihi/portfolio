@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 /* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
 
 /* Pretendard Variable */
-@import url('./common/pretendardvariable-dynamic-subset.css');
+@import url("./common/pretendardvariable-dynamic-subset.css");
 
 /* 변수선언 */
-@import url(./variable.css);
+@import url(./common/variable.css);
 
 /* pc버젼 */
 
@@ -21,6 +21,11 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999999;
+
+  mix-blend-mode: difference;
+}
+header.blend-none {
+  mix-blend-mode: normal;
 }
 
 header .h-nav {
@@ -29,6 +34,7 @@ header .h-nav {
   background-color: #000;
   border-radius: 0 0 20px 0;
 }
+
 header .h-nav .nav-title {
   width: 26.55vw;
   height: 100%;
@@ -41,6 +47,7 @@ header .h-nav .nav-title {
   top: 0;
   z-index: 999999;
 }
+
 header .h-nav .nav-title h1 {
   width: 250px;
   height: 80px;
@@ -54,15 +61,45 @@ header .h-nav .nav-title h1 a {
   background: url(./images/logo_white.png) no-repeat 70% 50% / 200px;
 }
 
-header .h-nav .nav-title .menu-btn {
-  width: 45px;
-  height: 45px;
-  background: url(./images/menu3-white.png) no-repeat 50% / contain;
-  margin-right: 1vw;
-  text-indent: -9999px;
+/* 수정해보는 메뉴 css */
+
+header .h-nav .nav-title .flex_wrap {
   cursor: pointer;
+  margin-right: 1vw;
 }
 
+header .h-nav .nav-title #toggle_btn {
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-content: center;
+}
+
+header .h-nav .nav-title #toggle_btn span {
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+
+  transition: 0.3s;
+}
+
+header .h-nav .nav-title #toggle_btn.closeMenu .bar1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+header .h-nav .nav-title #toggle_btn.closeMenu .bar2 {
+  transform: scale(0);
+}
+
+header .h-nav .nav-title #toggle_btn.closeMenu .bar3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* 움직임이 있는 메뉴 */
 
 /********* menu 클릭전까지 숨김 *********/
 header .h-nav .nav {
@@ -88,9 +125,11 @@ header .h-nav .nav {
 header .h-nav .nav .global-gnb {
   width: 100%;
 }
+
 header .h-nav .nav .global-gnb li {
   width: 100%;
 }
+
 header .h-nav .nav .global-gnb li a {
   display: block;
   width: 100%;
@@ -98,6 +137,7 @@ header .h-nav .nav .global-gnb li a {
   line-height: 60px;
   transition: 0.3s;
 }
+
 header .h-nav .nav .global-gnb li:hover a {
   transform: translateX(20px);
 }
@@ -139,13 +179,12 @@ header .sub-nav {
   height: 80px;
   font-size: var(--font-size-25);
   font-weight: 700;
-  cursor: pointer;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   position: relative;
+  color: #000;
 }
 header .sub-nav p {
   text-indent: 22px;
@@ -155,6 +194,7 @@ header .sub-nav .sub-btn {
   align-items: center;
   gap: 10px;
   margin-right: 50px;
+  cursor: pointer;
 }
 
 header .sub-nav .sub-btn img {
@@ -249,7 +289,7 @@ main .m-banner .banner {
     url(./images/txt-creative.png) no-repeat 31.5% 38% / 6.3%,
     url(./images/idea1.gif) no-repeat 20% 32% / 15%,
     url(./images/txt-coding.png) no-repeat 76% 44% / 9.5%,
-    url(./images/txt-me.png) no-repeat 76% 65% / 20%,
+    url(./images/txt-me.gif) no-repeat 76% 65% / 20%,
     url(./images/idea2.gif) no-repeat 28% 72% / 11%,
     url(./images/star3.png) no-repeat 27% 57.5% / 2%,
     url(./images/txt-dreams.png) no-repeat 39% 73% / 5%,
@@ -269,12 +309,14 @@ main .m-banner .m-txt {
 
   background: url(./images/Union1.png) no-repeat 29.5% 75% / 25.8%;
 }
+
 main .m-banner .m-txt h3 {
   text-align: left;
   font-family: var(--font-family-p);
   font-size: var(--font-size-45);
   width: 25%;
 }
+
 main .m-banner .m-txt .p-text p {
   font-size: var(--font-size-32);
   margin-top: 0.5vw;
@@ -285,7 +327,119 @@ main .m-banner .m-txt .p-text p .block {
   display: block;
 }
 
-main .m-banner .m-txt .p-text .btn-about {
+/* main .m-banner .m-txt .p-text .btn-about {
+  margin-top: 5vw;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  border-radius: 30px;
+  background: #000 url(./images/arrow2.png) no-repeat 90% 50% / 20px;
+}
+
+main .m-banner .m-txt .p-text .btn-about > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: var(--font-size-25);
+  font-weight: 700;
+  line-height: 50px;
+  text-indent: 20px;
+} */
+
+/* 버튼스타일 */
+.button {
+  --duration: 0.5s;
+  --move-hover: -4px;
+  /* --shadow: 0 2px 8px -1px rgba(161, 161, 161, 0.32); */
+  /* --shadow-hover: 0 4px 20px -2px rgba(138, 138, 138, 0.5); */
+  padding: 16px 32px;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 24px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: 0.5px;
+  background: #000;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y));
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+.button div {
+  display: flex;
+}
+
+.button div span {
+  display: block;
+  backface-visibility: hidden;
+  font-style: normal;
+}
+
+.button div span:nth-child(1) {
+  --d: 0.05s;
+}
+
+.button div span:nth-child(2) {
+  --d: 0.1s;
+}
+
+.button div span:nth-child(3) {
+  --d: 0.15s;
+}
+
+.button div span:nth-child(4) {
+  --d: 0.2s;
+}
+
+.button div span:nth-child(5) {
+  --d: 0.25s;
+}
+
+.button div span:nth-child(6) {
+  --d: 0.3s;
+}
+
+.button div span:nth-child(7) {
+  --d: 0.35s;
+}
+
+.button div span:nth-child(8) {
+  --d: 0.4s;
+}
+
+.button div span:nth-child(9) {
+  --d: 0.45s;
+}
+
+.button div span:nth-child(10) {
+  --d: 0.5s;
+}
+
+.button div span:nth-child(11) {
+  --d: 0.55s;
+}
+
+.button:hover {
+  --y: var(--move-hover);
+  /* --shadow: var(--shadow-hover); */
+  --move: -4px;
+  /* --shadow-active: 0 3px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.button:hover span {
+  animation: move var(--duration) linear var(--d);
+}
+
+main .m-banner .m-txt .p-text .button {
   margin-top: 5vw;
   width: 200px;
   height: 50px;
@@ -304,11 +458,70 @@ main .m-banner .m-txt .p-text .btn-about > a {
   text-indent: 20px;
 }
 
+@keyframes move {
+  40% {
+    transform: translateY(var(--move));
+    text-shadow: var(--shadow-active);
+  }
+}
+
+@keyframes smoke {
+  45%,
+  55% {
+    filter: blur(var(--blur));
+  }
+
+  50%,
+  50.1% {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(var(--move)) translateY(var(--move-y));
+  }
+
+  50.1% {
+    transform: translateX(calc(var(--move) * -1));
+  }
+}
+
+@keyframes drive {
+  40% {
+    opacity: 1;
+  }
+
+  55% {
+    transform: skewX(var(--skew)) translateX(var(--move));
+  }
+
+  56% {
+    transform: skewX(var(--skew-fast)) translateX(calc(var(--move) * -1));
+  }
+
+  55%,
+  56% {
+    opacity: 0;
+  }
+
+  75% {
+    transform: skewX(var(--skew));
+  }
+
+  85% {
+    transform: skewX(var(--skew-bounce));
+  }
+}
+
 /********* section2 .slide *********/
 main .slide {
   width: 100%;
   height: 150vh;
-  margin-top: 10vw;
+  margin-top: 12vw;
 
   display: flex;
   overflow: hidden;
@@ -327,31 +540,40 @@ main .slide .slidebox h2 {
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 140vh;
+  line-height: 180vh;
 
   font-size: var(--font-size-350);
   font-weight: 700;
   letter-spacing: -10px;
 }
+
 main .slide #slide1 {
   background-color: #000;
   color: #fff;
   transform: translateX(0);
   transition: 2.3s;
+  transition-delay: 1s;
 }
 
 /* 마우스 이벤트 전엔 숨김 페이지 */
 main .slide #slide2 {
-  background: #fff url(./images/me2.gif) no-repeat 48% 18% / 25%;
+  background: #fff url(./images/me2.gif) no-repeat 48% 30% / 35%;
 
-  width: 0px;
+  width: 0;
   overflow: hidden;
   transform: translateX(100%);
-  transition: 2.5s;
+  transition: 2s;
 }
 
 .slide.start #slide2 {
   width: 100%;
+  transform: translateX(-100%);
+  position: sticky;
+  top: 0;
+  height: 150vh;
+}
+
+.slide.start #slide1 {
   transform: translateX(-100%);
 }
 
@@ -362,6 +584,7 @@ main .myWeb {
 
   display: flex;
 }
+
 main .myWeb .web {
   width: 25%;
   height: 100%;
@@ -373,6 +596,7 @@ main .myWeb .web {
 
   position: relative;
 }
+
 main .myWeb .web-txt {
   width: 100%;
   height: 18vh;
@@ -385,6 +609,7 @@ main .myWeb .web-txt h3 {
   font-size: var(--font-size-20);
   font-weight: 700;
 }
+
 main .myWeb .web-txt p {
   font-size: var(--font-size-18);
   font-weight: 700;
@@ -394,27 +619,35 @@ main .myWeb .web-txt p {
 main .myWeb .web:hover {
   color: var(--color-point);
 }
+
 main .myWeb .web1 {
   background: url(./images/img-am1.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web1:hover {
   background: url(./images/img-am2.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web2 {
   background: url(./images/img-vs1.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web2:hover {
   background: url(./images/img-vs2.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web3 {
   background: url(./images/img-sm1.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web3:hover {
   background: url(./images/img-sm2.png) no-repeat 50% / cover;
 }
+
 main .myWeb .web4 {
   background: url(./images/img1.jpg) no-repeat 50% / cover;
 }
+
 main .myWeb .web4:hover {
   background: url(./images/img2.jpg) no-repeat 50% / cover;
 }
@@ -422,25 +655,37 @@ main .myWeb .web4:hover {
 /********* section4 .career *********/
 main .career {
   width: 100%;
-  margin-top: 10vw;
+  padding-top: 10vw;
   overflow: hidden;
+
+  position: relative;
 }
+
 main .career h2 {
   font-family: var(--font-family-point);
   font-size: var(--font-size-150);
   text-align: center;
 }
 
-main .career .line {
-  width: 100%;
-  height: 45vh;
-  text-indent: -99999px;
-  background: url(./images/line-vertical.png) no-repeat 50% 15% / 60px;
+/* 스크롤시 선이 나타나는 이벤트 */
+
+main .career .obj {
+  width: 4.4375rem;
+  height: 14.5rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+
+  position: absolute;
+  left: 50%;
+  top: 25vw;
+  transition: 1s ease-in;
 }
 
 main .career .careerBox {
   width: 100%;
   height: 100vh;
+  margin-top: 23vw;
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(2, 1fr);
 }
@@ -581,6 +826,9 @@ main .answer {
   width: 100%;
   margin-top: 13vw;
   text-align: center;
+
+  position: relative;
+  overflow: hidden;
 }
 main .answer h2 {
   font-family: var(--font-family-point);
@@ -588,17 +836,36 @@ main .answer h2 {
   line-height: 1.2;
 }
 
-main .answer .line {
-  width: 100%;
-  height: 30vh;
-  text-indent: -99999px;
-  background: url(./images/line-vertical.png) no-repeat 50% 25% / 60px;
+main .answer .obj {
+  width: 4.4375rem;
+  height: 14.5rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+  margin: 3vw auto;
+
+  transition: 1s ease-in;
 }
 
 main .answer p {
   font-size: var(--font-size-24);
   font-weight: 700;
   margin-bottom: 13vw;
+}
+
+main .answer img {
+  width: 40%;
+
+  position: absolute;
+  bottom: -15vw;
+  right: 0;
+
+  transition: 1.5s ease-in-out;
+  transform: translateY(30vw);
+}
+
+main .answer:hover img {
+  transform: translateY(0);
 }
 
 /********* footer *********/
