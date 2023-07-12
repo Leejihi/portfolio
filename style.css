@@ -728,7 +728,7 @@ main .career .careerBox .txtBox .jobBox {
 }
 main .career .careerBox .txtBox .jobBox:hover {
   opacity: 1;
-  transform: translateX(10px);
+  transform: translateX(15px);
 }
 main .career .careerBox .txtBox .jobBox h3 {
   font-weight: 500;
