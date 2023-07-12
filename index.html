@@ -22,6 +22,8 @@
     <!-- reset -->
     <link rel="stylesheet" href="./common/reset.css">
 
+    <!-- 밑줄효과 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- pc 우선 -->
     <link rel="stylesheet" href="./style.css">
     <!-- <link rel="stylesheet" href="./mobile.css" media="(width >=500px)">
@@ -32,6 +34,8 @@
 
     <!-- jQuery -->
     <script src="./common/jquery-3.7.0.min.js"></script>
+    <!-- 밑줄효과 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./index.js"></script>
 </head>
 
@@ -91,7 +95,7 @@
         <section class="m-banner">
             <h3>Hi. my name is</h3>
             <h2>Lee Ji Hee</h2>
-            <div class="banner">메인이미지</div>
+            <div class=" banner">메인이미지</div>
             <div class="m-txt">
                 <h3>Who i am</h3>
                 <div class="p-text">
@@ -101,6 +105,8 @@
                         <span class="block">많은 사람들과 더 다양하게 소통하기 위해 나는 앞으로도</span>
                         <span class="block">'더 새로운 것, 더 재밌는 것' 에 도전할거야!</span>
                     </p>
+
+                    <img src="./images/Union1.png" alt="동그라미" data-aos="zoom-in">
                     <!-- <div class="btn-about">
                         <a href="#">About me</a>
                     </div> -->
@@ -153,21 +159,21 @@
 
             <svg class="obj">
                 <path
-                    d="M65.8 1c.9 11 1.6 30.5 2.5 38 1.5 12 5 39-18 52-18.5 10.5-33.5 11.5-41 5S-.9 71.9 5.8 70c12.5-3.5 30.5 13 37.5 36s6.5 40 4.5 53.5-19.5 65-20 71.5" />
+                    d="M32.5 1.5C54 27.5 65.182 68.5 68.341 81C71.5 93.5 73.3411 120 50.341 133C31.8224 143.467 16.841 144.5 9.34103 138C1.84103 131.5 -0.899716 113.887 5.84103 112C18.3411 108.5 36.341 125 43.341 148C50.341 171 49.841 188 47.841 201.5C45.841 215 -4.99982 335 27.841 361" />
             </svg>
 
             <div class="careerBox">
                 <ul class="imgBox">
-                    <li class="img1">kt wiz</li>
-                    <li class="img2">RollyShube</li>
-                    <li class="img3">neflab</li>
-                    <li class="img4">hyundai</li>
+                    <li class="img1 active">kt wiz</li>
+                    <li class="img2">neflab</li>
+                    <li class="img3">hyundai</li>
+                    <li class="img4">RollyShube </li>
                     <li class="img5">고용노동부</li>
                     <li class="img6">pancakes original story</li>
                 </ul>
 
                 <div class="txtBox">
-                    <div class="jobBox box1">
+                    <div class="jobBox">
                         <h3>01.</h3>
                         <div class="p-txt">
                             <p class="title">kt wiz</p>
@@ -177,22 +183,23 @@
                     <div class="jobBox box2">
                         <h3>02.</h3>
                         <div class="p-txt">
-                            <p class="title">rollyshube</p>
-                            <p>브랜드 디자인 / 롤리슈브 아이덴티티 정립 및 광고, 패키지, 웹 디자인</p>
+                            <p class="title">neflab</p>
+                            <p>박람회 프로젝트 참여 / 신기술 일러스트 작업, 박람회 부스 디자인 및 인쇄디자인</p>
+
                         </div>
                     </div>
                     <div class="jobBox box3">
                         <h3>03.</h3>
                         <div class="p-txt">
-                            <p class="title">neflab</p>
-                            <p>박람회 프로젝트 참여 / 신기술 일러스트 작업, 박람회 부스 디자인 및 인쇄디자인</p>
+                            <p class="title">hyundai</p>
+                            <p>현대 남양사업부 / 직원 오리엔테이션 프로그램 카드뉴스 디자인</p>
                         </div>
                     </div>
                     <div class="jobBox box4">
                         <h3>04.</h3>
                         <div class="p-txt">
-                            <p class="title">hyundai</p>
-                            <p>현대 남양사업부 / 직원 오리엔테이션 프로그램 카드뉴스 디자인</p>
+                            <p class="title">rollyshube</p>
+                            <p>브랜드 디자인 / 롤리슈브 아이덴티티 정립 및 광고, 패키지, 웹 디자인</p>
                         </div>
                     </div>
                     <div class="jobBox box5">
@@ -270,7 +277,7 @@
             <h2>Can't Find Your<br>Answer?</h2>
             <svg class="obj">
                 <path
-                    d="M65.8 1c.9 11 1.6 30.5 2.5 38 1.5 12 5 39-18 52-18.5 10.5-33.5 11.5-41 5S-.9 71.9 5.8 70c12.5-3.5 30.5 13 37.5 36s6.5 40 4.5 53.5-19.5 65-20 71.5" />
+                    d="M14 0.5C17.5 25.5 4.43745 80.5 3.49998 88C2.00003 100 -1.50006 127 21.5 140C40.0186 150.467 55 151.5 62.5 145C70 138.5 72.7407 120.887 66 119C53.4999 115.5 35.5 132 28.5 155C21.5 178 22 195 24 208.5C26 222 43.5 273.5 44 280" />
             </svg>
             <p>I am here to help.</p>
             <img src="./images/me3.gif" alt="윙크하는 캐릭터">
@@ -284,6 +291,8 @@
             <a href="#">
                 <p>Let’s work together</p>
             </a>
+            <img src="./images/arrow.png" alt="화살표">
+            <p class="noneBox">I love to work together !</p>
         </div>
     </footer>
 
