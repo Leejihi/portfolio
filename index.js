@@ -81,6 +81,36 @@ let scrolled = () => {
 };
 addEventListener('scroll', scrolled);
 
+// 커리어 영역 호버시 이미지 보여지도록!!
+
+$(document).ready(function () {
+  $('.box1').on('mouseover', () => {
+    //.attr(); html의 속성 변경
+    $('.careerImg').attr({ src: 'images/career-kt.png', alt: 'kt' });
+  });
+  $('.box2').on('mouseover', () => {
+    $('.careerImg').attr({ src: './images/career-nef.png', alt: 'nef leb' });
+  });
+  $('.box3').on('mouseover', () => {
+    $('.careerImg').attr({ src: './images/career-hd.gif', alt: '현대' });
+  });
+  $('.box4').on('mouseover', () => {
+    $('.careerImg').attr({
+      src: './images/career-rolly.png',
+      alt: '고용노동부',
+    });
+  });
+  $('.box5').on('mouseover', () => {
+    $('.careerImg').attr({ src: './images/career-go.png', alt: '고용노동부' });
+  });
+  $('.box6').on('mouseover', () => {
+    $('.careerImg').attr({
+      src: './images/career-pan.png',
+      alt: '팬케익 오리지널 스토리',
+    });
+  });
+});
+
 // 앤써영역 svg 이벤트
 
 let anPath = document.querySelector('.answer path');
@@ -107,6 +137,8 @@ addEventListener('scroll', scrolle);
 
 AOS.init();
 
-// 호버시 이미지 보여지도록!!
-
-// 호버시 보여지는 글자
+// 버튼클릭시 부드러운 이동
+$('.up-btn').click(function () {
+  $('html, body').animate({ scrollTop: 0 }, 500);
+  return false;
+});
