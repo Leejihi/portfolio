@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap');
 
 /* Pretendard Variable */
-@import url('./common/pretendardvariable-dynamic-subset.css');
+@import url('./pretendardvariable-dynamic-subset.css');
 
 /* 변수선언 */
-@import url(./common/variable.css);
+@import url(./variable.css);
 
 /* pc버젼: 각 영역 공통 css */
 
