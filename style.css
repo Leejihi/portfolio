@@ -564,7 +564,7 @@ main .skill .skillBox .tool .toolBox h4 {
 main .skill .skillBox .tool .tool-adobe .adobe {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: var(--font-size-22);
+  font-size: var(--font-size-20);
   line-height: 1.8;
   font-weight: 700;
   display: flex;

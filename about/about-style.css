@@ -11,10 +11,10 @@
 
 /* pc버젼 */
 
-/* 공통 */
-body {
-  font-family: var(--font-family-title);
-  /* background-color: #fff; */
+/****************** header ******************/
+
+header {
+  mix-blend-mode: normal;
 }
 
 .block {
@@ -26,9 +26,9 @@ body {
 
 main .m-banner {
   width: 100%;
-  height: 200vh;
   margin-top: 9vw;
   text-align: center;
+  position: relative;
 }
 main .m-banner h3 {
   font-family: var(--font-family-point);
@@ -38,6 +38,21 @@ main .m-banner h2 {
   font-weight: 700;
   font-size: var(--font-size-120);
   letter-spacing: -5px;
+}
+
+.under-line {
+  width: 52.86458vw;
+  height: 3.125vw;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+
+  position: absolute;
+  top: 12.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 9;
 }
 
 main .m-banner .haker-banner {
@@ -69,4 +84,26 @@ main .m-banner .haker-banner .p-text p:first-child {
 
 main .m-banner .haker-banner .p-text p:last-child {
   margin-top: 2vw;
+}
+
+/* svg */
+main .svg-event {
+  width: 100%;
+  height: 50vh;
+}
+
+main .svg-event .dance-me {
+  display: block;
+  width: 25%;
+  position: fixed;
+  top: 15vw;
+  left: 4vw;
+  z-index: 99;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  z-index: 999;
 }
