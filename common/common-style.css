@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
 
 /* Pretendard Variable */
-@import url('./pretendardvariable-dynamic-subset.css');
+@import url("./pretendardvariable-dynamic-subset.css");
 
 /* 변수선언 */
 @import url(./variable.css);
@@ -240,7 +240,7 @@ header .sub-nav .sub-popup p:last-child {
   font-weight: 400;
 }
 header .sub-nav .sub-popup li:nth-child(3) {
-  background: url(./images/Haker.jihee.png) no-repeat 50% / 95%;
+  background: url(../images/Haker.jihee.png) no-repeat 50% / 95%;
   text-indent: -99999999px;
 }
 header .sub-nav .sub-popup li:last-child {
