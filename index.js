@@ -86,7 +86,7 @@ addEventListener('scroll', scrolled);
 $(document).ready(function () {
   $('.box1').on('mouseover', () => {
     //.attr(); html의 속성 변경
-    $('.careerImg').attr({ src: 'images/career-kt.png', alt: 'kt' });
+    $('.careerImg').attr({ src: 'images/career-kt.jpg', alt: 'kt' });
   });
   $('.box2').on('mouseover', () => {
     $('.careerImg').attr({ src: './images/career-nef.png', alt: 'nef leb' });

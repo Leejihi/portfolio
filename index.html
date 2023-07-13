@@ -26,7 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- 헤더css -->
-    <link rel="stylesheet" href="./common-style.css">
+    <link rel="stylesheet" href="./common/common-style.css">
     <!-- pc 우선 -->
     <link rel="stylesheet" href="./style.css">
 
@@ -49,7 +49,7 @@
     <header>
         <div class="h-nav">
             <div class="nav-title">
-                <h1><a href="#">지희로고</a></h1>
+                <h1><a href="https://leejihi.github.io/portfolio">지희로고</a></h1>
                 <div id="toggle_btn" class="flex_wrap">
                     <div class="mobile_icon">
                         <span class="bar1 transit"></span>
@@ -61,9 +61,9 @@
 
             <div class="nav">
                 <menu class="global-gnb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Works</a></li>
+                    <li><a href="https://leejihi.github.io/portfolio">Home</a></li>
+                    <li><a href="https://leejihi.github.io/portfolio/about/about">About me</a></li>
+                    <li><a href="https://leejihi.github.io/portfolio/#myWeb">Works</a></li>
                 </menu>
                 <ul class="h-sns">
                     <li><a href="https://github.com/Leejihi/portfolio" target="_blank">깃허브로고</a></li>
@@ -111,10 +111,7 @@
                         <span class="block">'더 새로운 것, 더 재밌는 것' 에 도전할거야!</span>
                     </p>
 
-                    <img src="./images/Union1.png" alt="동그라미" data-aos="zoom-in">
-                    <!-- <div class="btn-about">
-                        <a href="#">About me</a>
-                    </div> -->
+                    <img src="./images/Union1.png" alt="동그라미">
                     <button class="button"><a href="#">About Me</a></button>
                 </div>
             </div>
@@ -131,7 +128,7 @@
         </section>
 
 
-        <section class="myWeb">
+        <section class="myWeb" id="myWeb">
             <div class="web web1">
                 <div class="web-txt">
                     <h3>seoul-angmusae</h3>
@@ -176,7 +173,7 @@
                     <div class="jobBox box1">
                         <h3>01.</h3>
                         <div class="p-txt">
-                            <p class="title">kt wiz</p>
+                            <p class="title">kt wiz / kt sports</p>
                             <p>kt sports main designer / 2020년, 2021년 포스트 시즌 구장사인물, 전광판, 홍보 디자인</p>
                         </div>
                     </div>
@@ -243,31 +240,44 @@
                 <div class="tool">
                     <h3>JavaScript & jQeury</h3>
                     <p>ES6+ 문법</p>
-                    <p>비동기 통신 ​Ajax를 이용한 JSON 데이터 활용</p>
-                    <p>DOM, BOM 제어</p>
-                    <p> Open API를 활용해 외부 데이터 가져오기</p>
+                    <p>jQuery를 이용한 DOM 제어</p>
+                    <p>비동기 통신 ​AJAX 활용 : $ajax( ), fetch 이용하여 Web API 사용</p>
+                    <p>동적인 이펙트 구현 : 마우스, 스크롤, 포인터 등의 이벤트를 활용</p>
+                    <p>비동기 함수 : SetTimeout( ), SetInterval( ) 사용</p>
                 </div>
                 <div class="tool">
                     <h3>Git, Github</h3>
                     <p>분산 버전 관리</p>
                     <p>GitHub를 통해 팀 프로젝트 실시간 공유 및 협업</p>
 
-                    <h3>UI Design</h3>
+                    <h3 class="margin-top">UI Design</h3>
                     <p>사용자 분석을 통한 UX기반 UI디자인</p>
                 </div>
                 <div class="tool">
                     <h3>Tools</h3>
                     <div class="toolBox">
                         <h4>VSCode</h4>
-                        <p>VSCode를 이용한 코드 작성</p>
+                        <p>VScode를 사용하여 HTML, CSS, JS 코드 에디팅</p>
                     </div>
                     <div class="toolBox">
                         <h4>Figma</h4>
-                        <p>프로토타입 제작</p>
+                        <p>프로토타입 제작, 와이어 프레임 제작, 공동작업</p>
                     </div>
 
-                    <p><strong>PHOTOSHOP / ILLUSTRATOR / INDESIGN / AFETER EFFECTS</strong></p>
-                    <p>그래픽, 편집, 패키지, 일러스트, 영상 디자인</p>
+                    <div class="tool-adobe">
+                        <div class="adobe">
+                            <div class="adobe-box"><img src="./images/adobe_photo.svg" alt="포토샵 로고">PHOTOSHOP </div>
+                            <div class="adobe-box"><img src="./images/adobe_illust.svg" alt="일러스트레이터 로고">ILLUSTRATOR
+                            </div>
+                            <div class="adobe-box"><img src="./images/adobe_in.webp" alt="인디자인 로고">INDESIGN </div>
+                            <div><img src="./images/adobe_after.svg" alt="에프터이펙트 로고">AFETER EFFECTS</div>
+                        </div>
+
+                        <p>어도비 프로그램 호환 작업 : UI UX 디자인, 그래픽 디자인, 인쇄 편집 디자인,<span class="block">패키지 디자인, 브랜딩, 일러스트, 캐릭터,
+                                영상 디자인</span>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
