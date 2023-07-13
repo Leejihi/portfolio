@@ -25,6 +25,7 @@ header {
 
   mix-blend-mode: difference;
 }
+
 header.blend-none {
   mix-blend-mode: normal;
 }
