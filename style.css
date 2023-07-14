@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
 
 /* Pretendard Variable */
-@import url('./common/pretendardvariable-dynamic-subset.css');
+@import url("./common/pretendardvariable-dynamic-subset.css");
 
 /* 변수선언 */
 @import url(./common/variable.css);
@@ -60,13 +60,6 @@ main .m-banner .m-txt {
   position: relative;
 }
 
-main .m-banner .m-txt img {
-  width: 25.8%;
-  position: absolute;
-  bottom: 6vw;
-  left: 23%;
-}
-
 main .m-banner .m-txt h3 {
   text-align: left;
   font-family: var(--font-family-p);
@@ -84,6 +77,13 @@ main .m-banner .m-txt .p-text p .block {
   display: block;
 }
 
+main .m-banner .m-txt img {
+  width: 25.8%;
+  position: absolute;
+  bottom: 6vw;
+  left: 23%;
+}
+
 /* 버튼스타일 */
 .button {
   --duration: 0.5s;
@@ -91,7 +91,8 @@ main .m-banner .m-txt .p-text p .block {
 
   padding: 16px 32px;
   color: #fff;
-
+  font-size: var(--font-size-28);
+  letter-spacing: 0.7px;
   font-weight: 700;
   line-height: 1.5rem;
   border-radius: 24px;
@@ -100,8 +101,7 @@ main .m-banner .m-txt .p-text p .block {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: var(--font-size-28);
-  letter-spacing: 0.7px;
+
   background: #000;
   color: #fff;
   box-shadow: var(--shadow);
@@ -415,9 +415,9 @@ main .career .careerBox {
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(2, 1fr);
 }
+
 main .career .careerBox .imgBox {
   overflow: hidden;
-  text-indent: -999999px;
   width: 100%;
   height: 100%;
 
@@ -463,10 +463,6 @@ main .career .careerBox .txtBox .jobBox .p-txt .title {
   font-weight: 600;
   margin-bottom: 5px;
 }
-main .career .careerBox .txtBox .box5 .p-txt .title {
-  font-size: var(--font-size-32);
-  font-weight: 700;
-}
 
 /********* section5 .skill *********/
 
@@ -480,6 +476,7 @@ main .skill .speaker {
   margin-left: 5vw;
   line-height: 1.6;
 }
+
 main .skill .speaker .line {
   width: 30%;
   height: 5vw;
@@ -545,6 +542,7 @@ main .skill .skillBox .tool p {
   margin-bottom: 15px;
   line-height: var(--font-size-30);
 }
+
 main .skill .skillBox .tool .toolBox {
   display: flex;
   gap: 20px;

@@ -2,36 +2,36 @@
 
 // 상단 nav 레이어 팝업 열기
 $(function () {
-  $('.flex_wrap').on('click', () => {
-    $('.nav').toggle();
+  $(".flex_wrap").on("click", () => {
+    $(".nav").toggle();
   });
 });
 
 // 상단 nav 컨텍 팝업 열기
 $(function () {
-  $('.sub-btn').on('click', () => {
-    $('.sub-popup').show();
+  $(".sub-btn").on("click", () => {
+    $(".sub-popup").show();
   });
-  $('.close-btn').on('click', () => {
-    $('.sub-popup').hide();
+  $(".close-btn").on("click", () => {
+    $(".sub-popup").hide();
   });
 });
 
 // 메뉴 버튼 이벤트
 
-$('#toggle_btn').on('click', function () {
+$("#toggle_btn").on("click", function () {
   // function 함수 사용시 this 키워드가 지칭하는 대상은 클릭한 바로 그 #toggle_btn
-  $(this).toggleClass('closeMenu');
+  $(this).toggleClass("closeMenu");
 });
 
 //웹작업 배너 위치 도착시 header 변경
-$(window).on('scroll', () => {
-  const myWeb = $('.myWeb').offset().top;
+$(window).on("scroll", () => {
+  const myWeb = $(".myWeb").offset().top;
 
   if (scrollY > myWeb) {
-    $('header').addClass('.blend-none');
+    $("header").addClass(".blend-none");
   } else {
-    $('header').addClass('.blend-none');
+    $("header").addClass(".blend-none");
   }
 });
 
@@ -39,29 +39,30 @@ $(window).on('scroll', () => {
 
 // 어바웃 미 버튼
 document
-  .querySelectorAll('.button')
+  .querySelectorAll(".button")
   .forEach(
     (button) =>
       (button.innerHTML =
-        '<div><span>' +
-        button.textContent.trim().split('').join('</span><span>') +
-        '</span></div>')
+        "<div><span>" +
+        button.textContent.trim().split("").join("</span><span>") +
+        "</span></div>")
   );
 
 // 슬라이드
 
-$(window).on('scroll', () => {
-  let slideHeight = $('.slide').offset().top - 500;
+$(window).on("scroll", () => {
+  let slideHeight = $(".slide").offset().top - 500;
 
   if (scrollY > slideHeight) {
-    $('.slide').addClass('start');
+    $(".slide").addClass("start");
   } else {
-    $('.slide').removeClass('start');
+    $(".slide").removeClass("start");
   }
 });
 
 // 커리어 영역 svg 이벤트
-let objPath = document.querySelector('.obj path');
+
+let objPath = document.querySelector(".obj path");
 let path = objPath.getTotalLength();
 console.log(path);
 
@@ -79,41 +80,43 @@ let scrolled = () => {
 
   objPath.style.strokeDashoffset = path - action;
 };
-addEventListener('scroll', scrolled);
+addEventListener("scroll", scrolled);
+
+// 커리어 영역 svg 이벤트 미디어쿼리
 
 // 커리어 영역 호버시 이미지 보여지도록!!
 
 $(document).ready(function () {
-  $('.box1').on('mouseover', () => {
+  $(".box1").on("mouseover", () => {
     //.attr(); html의 속성 변경
-    $('.careerImg').attr({ src: 'images/career-kt.jpg', alt: 'kt' });
+    $(".careerImg").attr({ src: "images/career-kt.jpg", alt: "kt" });
   });
-  $('.box2').on('mouseover', () => {
-    $('.careerImg').attr({ src: './images/career-nef.png', alt: 'nef leb' });
+  $(".box2").on("mouseover", () => {
+    $(".careerImg").attr({ src: "./images/career-nef.png", alt: "nef leb" });
   });
-  $('.box3').on('mouseover', () => {
-    $('.careerImg').attr({ src: './images/career-hd.gif', alt: '현대' });
+  $(".box3").on("mouseover", () => {
+    $(".careerImg").attr({ src: "./images/career-hd.gif", alt: "현대" });
   });
-  $('.box4').on('mouseover', () => {
-    $('.careerImg').attr({
-      src: './images/career-rolly.png',
-      alt: '고용노동부',
+  $(".box4").on("mouseover", () => {
+    $(".careerImg").attr({
+      src: "./images/career-rolly.png",
+      alt: "고용노동부",
     });
   });
-  $('.box5').on('mouseover', () => {
-    $('.careerImg').attr({ src: './images/career-go.png', alt: '고용노동부' });
+  $(".box5").on("mouseover", () => {
+    $(".careerImg").attr({ src: "./images/career-go.png", alt: "고용노동부" });
   });
-  $('.box6').on('mouseover', () => {
-    $('.careerImg').attr({
-      src: './images/career-pan.png',
-      alt: '팬케익 오리지널 스토리',
+  $(".box6").on("mouseover", () => {
+    $(".careerImg").attr({
+      src: "./images/career-pan.png",
+      alt: "팬케익 오리지널 스토리",
     });
   });
 });
 
 // 앤써영역 svg 이벤트
 
-let anPath = document.querySelector('.answer path');
+let anPath = document.querySelector(".answer path");
 let anpath = anPath.getTotalLength();
 console.log(path);
 
@@ -131,14 +134,14 @@ let scrolle = () => {
 
   anPath.style.strokeDashoffset = anpath - action;
 };
-addEventListener('scroll', scrolle);
+addEventListener("scroll", scrolle);
 
 // 밑줄효과
 
 AOS.init();
 
 // 버튼클릭시 부드러운 이동
-$('.up-btn').click(function () {
-  $('html, body').animate({ scrollTop: 0 }, 500);
+$(".up-btn").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 500);
   return false;
 });

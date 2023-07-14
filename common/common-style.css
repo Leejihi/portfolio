@@ -277,13 +277,13 @@ footer .together {
 
   position: relative;
 }
+
 footer .together a {
   display: block;
   font-size: var(--font-size-80);
   font-weight: 500;
   color: #fff;
   margin-left: 5vw;
-  background: url(../images/arrow.png) no-repeat 130% 60%/ 80px;
 }
 
 footer .together img {
@@ -320,6 +320,52 @@ footer:hover .noneBox {
   }
   100% {
     width: 41%;
+  }
+}
+
+/********* footer 미디어쿼리 *********/
+
+@media screen and (max-width: 1300px) {
+  footer .together {
+    overflow: hidden;
+  }
+
+  footer .together a {
+    font-size: var(--font-size-58);
+    margin-left: 2vw;
+  }
+
+  footer .together img {
+    width: 45px;
+    height: 45px;
+    left: 45%;
+  }
+
+  footer .together .noneBox {
+    font-size: var(--font-size-58);
+    font-weight: 300;
+    letter-spacing: -3px;
+
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer .together a {
+    font-size: var(--font-size-50);
+  }
+
+  footer .together img {
+    width: 40px;
+    height: 40px;
+    left: 47%;
+  }
+
+  footer .together .noneBox {
+    font-size: var(--font-size-50);
+    letter-spacing: -3px;
+
+    left: 53%;
   }
 }
 
