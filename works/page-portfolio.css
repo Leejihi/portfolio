@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
 
 /* Pretendard Variable */
-@import url('../common/pretendardvariable-dynamic-subset.css');
+@import url("../common/pretendardvariable-dynamic-subset.css");
 
 /* 변수선언 */
 @import url(../common/variable.css);
@@ -35,7 +35,7 @@ main {
 
 .right {
   width: 31.2%;
-  height: 85vh;
+  height: 100vh;
   overflow: hidden;
 
   position: fixed;
@@ -74,25 +74,24 @@ main {
 }
 
 .right .r-wrapper .txt p {
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-17);
   margin-bottom: 6px;
 }
 .right .r-wrapper .txt p:first-child {
-  font-size: var(--font-size-17);
+  font-size: var(--font-size-15);
   font-weight: 600;
 }
 
 .right .r-wrapper .txt .bold {
   display: inline-block;
-  width: 24%;
-  font-size: var(--font-size-18);
+  width: 25%;
+  font-size: var(--font-size-17);
 }
 
 .right .r-wrapper .link-box {
   width: 80%;
   height: 55px;
-  /* background-color: #000; */
-  margin: 0 auto 3.3vw;
+  margin: 0 auto 3vw;
   color: #fff;
   font-size: var(--font-size-18);
   line-height: 55px;
@@ -113,11 +112,35 @@ main {
   color: #000;
 }
 
-/* -- 메인 왼쪽 영역 -- */
-.left {
-  width: 68.8%;
-  overflow-y: scroll;
+.right .r-wrapper .wrapper1 li {
+  font-size: 1rem;
+  font-weight: 400;
 }
+
+.right .r-wrapper .wrapper1 .title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-20);
+  font-weight: 600;
+}
+
+.right .r-wrapper .wrapper1 .tool {
+  margin: 1.5vw auto;
+  display: flex;
+  gap: 1vw;
+}
+
+.right .r-wrapper .wrapper1 .tool .img {
+  display: flex;
+}
+
+.right .r-wrapper .wrapper1 .tool .img li {
+  width: 70%;
+}
+.right .r-wrapper .wrapper1 .tool .img li img {
+  width: 80%;
+}
+
+/* ---------- 메인 왼쪽 영역 ---------- */
 
 /* 스크롤바 커스텀 */
 .left::-webkit-scrollbar {
@@ -131,9 +154,349 @@ main {
 
 /* 스크롤바 안보인다 이것을 해결하자 */
 .left::-webkit-scrollbar-thumb {
-  width: 18px;
-  height: 25px;
+  height: 36px;
   background-color: #fff;
   border: 1px solid #000;
 }
+
+.left {
+  width: 68.8%;
+  overflow-y: scroll;
+}
+
+/* 메인배너 */
+.left .m-banner {
+  width: 100%;
+  height: 80vh;
+  text-indent: -999999px;
+  background: url(./images/me2.gif) no-repeat -38vw 18vw / 100%,
+    url(./images/page_bg.gif) no-repeat 50% / 100%;
+}
+
+.left .m-title {
+  width: 100%;
+  height: 17vw;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+  display: grid;
+  place-content: center;
+}
+
+.left .m-title h3 {
+  font-size: var(--font-size-32);
+  font-weight: 700;
+  margin-bottom: 0.5vw;
+}
+
+.left .m-title p {
+  font-size: var(--font-size-17);
+  margin-bottom: 0.5vw;
+}
+
+/* 스타일가이드 */
+.left .style {
+  width: 100%;
+  padding: 7vw 3vw 10vw;
+}
+
+.left .style h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-58);
+}
+
+.left .style .line {
+  width: 40%;
+  height: 5vw;
+  text-indent: -99999px;
+  background: url(./images/Union2.png) no-repeat 65% 0 / 45%;
+}
+
+.left .style .box .title {
+  font-size: var(--font-size-28);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.left .style .box p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.7px;
+}
+
+.left .style .box1,
+.left .style .box2,
+.left .style .typoBox {
+  display: flex;
+  gap: 1vw;
+}
+
+.left .style .box1 {
+  margin-top: 5vw;
+}
+
+/* 로고 */
+.left .style .box1 .txtBox1 {
+  width: 50%;
+}
+
+.left .style .box1 .imgBox1 {
+  width: 50%;
+}
+
+.left .style .txtBox1 .imgBox1 {
+  width: 80%;
+  margin-top: 3vw;
+}
+
+.left .style .txtBox1 .imgBox1 img {
+  width: 100%;
+}
+
+.left .style .txtBox1 .imgBox1 .imgTxt {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+.left .style .txtBox1 .imgBox1 .imgTxt p {
+  font-size: 0.9rem;
+}
+
+.left .style .txtBox1 .imgBox1 .imgTxt .bold {
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+/* 컬러팔레트 */
+.left .style .txtBox2 {
+  position: relative;
+}
+
+.left .style .txtBox2 .imgBox2 {
+  width: 100%;
+  margin-top: 3vw;
+}
+
+.left .style .txtBox2 .imgBox2 img {
+  width: 80%;
+  position: absolute;
+  left: -10px;
+}
+
+/* 일러스트 */
+.left .style .box2 {
+  align-items: center;
+}
+
+.left .style .box2 .txtBox3 {
+  width: 100%;
+}
+
+.left .style .box2 .imgBox3 {
+  width: 100%;
+}
+
+.left .style .box2 .imgBox3 img {
+  width: 70%;
+  margin-left: 5vw;
+}
+
+/* 타이포그라피 */
+.left .style .box3 {
+  margin-top: 3vw;
+}
+
+.left .style .box3 .typoBox {
+  width: 100%;
+  margin-top: 2vw;
+}
+
+.left .style .box3 .typoBox .typo1 {
+  width: 33.333333%;
+}
+
+.left .style .box3 .typoBox .typo2 {
+  width: 33.333333%;
+  font-family: var(--font-family-title);
+}
+
+.left .style .box3 .typoBox .typo2 p {
+  letter-spacing: 0.5px;
+}
+
+.left .style .box3 .typoBox .typo3 {
+  width: 33.333333%;
+  font-family: var(--font-family-point);
+  letter-spacing: 2px;
+}
+
+.left .style .box3 .typoBox .typo3 p {
+  letter-spacing: 1.4px;
+}
+
+.left .style .box3 .typoBox p {
+  font-size: var(--font-size-22);
+}
+
+.left .style .box3 .typoBox .bold {
+  font-weight: 700;
+}
+
+.left .style .box3 .typoBox .small {
+  font-family: var(--font-family-p);
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #757575;
+}
+
+.left .style .box3 .typoBox .typo2 .small,
+.left .style .box3 .typoBox .typo3 .small {
+  letter-spacing: 0;
+}
+
+/* 솔루션 문제&해결 */
+.left .publishing {
+  width: 100%;
+}
+
+.left .publishing h3 {
+  width: 100%;
+  height: 12vw;
+  background-color: #000;
+  font-size: var(--font-size-32);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+
+  display: grid;
+  place-content: center;
+  margin-bottom: 0.5vw;
+}
+
+.left .publishing .ox-box {
+  width: 100%;
+  display: flex;
+  margin: 7vw auto;
+  align-items: center;
+}
+
+.left .publishing .ox-box svg {
+  width: 0.65vw;
+  height: 36vw;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1953125vw;
+}
+
+.left .publishing .ox-box .title {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-50);
+  text-align: center;
+  margin-bottom: 3.5vw;
+}
+
+.left .publishing .ox-box .problem li {
+  width: 75%;
+  margin: 2vw auto 0.5vw;
+  display: flex;
+  gap: 27px;
+}
+
+.left .publishing .ox-box .problem li img {
+  width: 20px;
+  height: 24px;
+}
+
+.left .publishing .ox-box .solution li {
+  width: 70%;
+  margin: 2vw auto 0.5vw;
+  display: flex;
+  gap: 27px;
+}
+
+.left .publishing .ox-box .solution li img {
+  width: 31px;
+  height: 20px;
+}
+
 /* -- 풋터 영역 -- */
+
+.left footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+/* 리뷰 */
+.left footer .review {
+  width: 100%;
+  padding: 7vw 5vw;
+}
+
+.left footer .review h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-58);
+}
+
+.left footer .review .line {
+  width: 40%;
+  height: 5vw;
+  text-indent: -99999px;
+  background: url(./images/Union2-wt.png) no-repeat 5% 0 / 50%;
+}
+
+.left footer .review .p-box p {
+  font-size: var(--font-size-17);
+  margin-bottom: 0.6vw;
+}
+
+/* 인포 */
+.left footer .f-info {
+  width: 90%;
+  height: 5vw;
+  border-top: 1px solid #fff;
+  margin: 0 auto;
+
+  font-size: var(--font-size-20);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left footer .f-info .all-git {
+  width: 95%;
+
+  display: flex;
+  align-items: center;
+}
+
+.left footer .f-info .all-git img {
+  width: 7vw;
+  transform: translateX(-0.4vw);
+  margin-right: 0.5vw;
+}
+
+.left footer .f-info .all-git li a {
+  display: block;
+  width: 120%;
+  padding-top: 0.7vw;
+  background: url(./images/go_arrow_wt.png) no-repeat 100% 50% / 12%;
+}
+
+.left footer .f-info .all-git li:last-child a {
+  display: block;
+  width: 120%;
+  margin-left: 1.5vw;
+  background: url(./images/go_arrow_wt.png) no-repeat 73% 50% / 6%;
+}
+
+.left footer .f-info .f-logo {
+  text-indent: -999999px;
+  width: 7vw;
+  background: url(./images/Haker-logo-wt.png) no-repeat 50% / 100%;
+}
