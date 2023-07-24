@@ -496,6 +496,15 @@ main {
   stroke-width: 0.1875rem;
 
   margin: 10vw auto 5vw;
+
+  opacity: 0;
+}
+
+.left .vision .vision-title .vertical-line.start {
+  opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
 }
 
 .left .vision .vision-title h2 {

@@ -266,7 +266,16 @@ main {
   stroke: #000;
   stroke-width: 0.1875rem;
 
-  margin: 8vw auto;
+  opacity: 0;
+
+  margin: 6vw auto;
+}
+
+.left .direction .direction-title .vertical-line.start {
+  opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
 }
 
 .left .direction .direction-title h2 {
