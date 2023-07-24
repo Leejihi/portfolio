@@ -2,11 +2,11 @@
 
 /* 변수선언 */
 :root {
-  --font-family-title: "Roboto", sans-serif;
-  --font-family-point: "Knewave", cursive;
-  --font-family-p: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI",
-    "Malgun Gothic", 돋움, sans-serif;
+  --font-family-title: 'Roboto', sans-serif;
+  --font-family-point: 'Knewave', cursive;
+  --font-family-p: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Segoe UI',
+    'Malgun Gothic', 돋움, sans-serif;
 
   --font-size-12: 0.75rem;
   --font-size-15: 0.9375rem;
@@ -42,5 +42,5 @@
 
   --margin: 5vw;
 
-  --color-point: #16fe17;
+  --color-point: #24ff79;
 }
