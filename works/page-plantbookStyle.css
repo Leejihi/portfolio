@@ -433,6 +433,10 @@ main {
   margin-bottom: 5px;
 }
 
+.left .before .before-img .before-txt li:hover {
+  background-color: rgba(23, 136, 228, 1);
+}
+
 /* after 변경사항 */
 .left .after {
   width: 100%;
