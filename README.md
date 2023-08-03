@@ -26,7 +26,7 @@ __KEYWORD: #KITSCH #BLACK&WHITE #SIMPLE__
 | 23.07.20 | UXUI RENEWAL DESIGN 서울앵무새 설명페이지 시안작업 |
 | 23.07.23 | Media Query 반응형웹 설명페이지 HTML, CSS, JavaScript |
 | 23.07.25 | UXUI RENEWAL 식물도감 HTML, CSS: 구조와 스타일값 완성, 추가로 필요한 이미지 작업 |
-| 23.07.26 | 팀 프로젝트 "Have a nice trip 2023" 설명페이지: 개인 작업 영역 기술정리 등을 기반으로 시안작업 |
+| 23.07.26 | 팀 프로젝트 "Have a nice trip 2023" 설명페이지: 개인 작업 영역 기술정리를 기반으로 시안 |
 | 23.07.27 | 팀 프로젝트 설명페이지: 개인 작업 영역 기술정리 |
 | 23.07.28 | Tim Walker 웹 시안작업: Tim Walker 웹 시안작업, 홈페이지의 움직임 분석 |
 | 23.07.29 | Tim Walker 웹 HTML, CSS: 웹 구조와 스타일값, 소스 추가 작업 |
