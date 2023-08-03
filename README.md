@@ -5,6 +5,7 @@
 ## Portfolio Haker.jihee
 
 __프로젝트 기간: 2023.06.25 ~ 2023.08.03__
+
 __KEYWORD: #KITSCH #BLACK&WHITE #SIMPLE__
 
 포트폴리오 작업 기록
