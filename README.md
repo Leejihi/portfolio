@@ -40,7 +40,7 @@ __KEYWORD: #KITSCH #BLACK&WHITE #SIMPLE__
 
 __프로젝트 기간: 2023.06.30 ~ 2023.07.10__
 
-__[웹사이트 보러가기 🤟] (https://team-oozz.github.io/team-oozz)__
+__[웹사이트 보러가기 🤟](https://team-oozz.github.io/team-oozz)__
 
 팀 프로젝트 작업 기록
 
