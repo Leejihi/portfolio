@@ -21,7 +21,7 @@ main .m-banner h2 {
 /********* section1 .m-banner txt *********/
 
 main .m-banner .m-txt h3 {
-  font-size: var(--font-size-30);
+  font-size: var(--font-size-28);
 }
 
 main .m-banner .m-txt .p-text p {
@@ -92,7 +92,7 @@ main .skill {
 }
 
 main .skill .skillBox .tool {
-  padding: 70px 60px 30px;
+  padding: 70px 40px 30px;
   border: 1px solid #000;
   border-radius: 20px 0 0 0;
 }
@@ -112,7 +112,7 @@ main .skill .skillBox .tool p {
 
 main .skill .skillBox .tool .toolBox h4 {
   font-size: var(--font-size-18);
-  width: 110px;
+  width: 90px;
   height: 35px;
 }
 
