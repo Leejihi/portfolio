@@ -84,6 +84,24 @@ main .m-banner .m-txt img {
   left: 23%;
 }
 
+/* section1 .m-banner txt 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  main .m-banner .m-txt h3 {
+    font-size: var(--font-size-32);
+  }
+
+  main .m-banner .m-txt .p-text p {
+    font-size: var(--font-size-27);
+    margin-top: -0.5vw;
+    line-height: 50px;
+  }
+
+  main .m-banner .m-txt img {
+    bottom: 6.6vw;
+    left: 24%;
+  }
+}
+
 /* 버튼스타일 */
 .button {
   --duration: 0.5s;
@@ -239,6 +257,14 @@ main .m-banner .m-txt .p-text .button {
 
   85% {
     transform: skewX(var(--skew-bounce));
+  }
+}
+
+/* 버튼스타일 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  .button {
+    font-size: var(--font-size-25);
+    line-height: 1.3rem;
   }
 }
 

@@ -26,7 +26,6 @@ main .m-banner .m-txt h3 {
 
 main .m-banner .m-txt .p-text p {
   font-size: var(--font-size-24);
-  margin-top: -0.5vw;
   line-height: 45px;
 }
 
