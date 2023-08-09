@@ -7,6 +7,30 @@ $(function () {
   });
 });
 
+// max-width: 999px까지 적용
+
+$(function () {
+  // Check window width before applying the click event
+  if ($(window).width() <= 999) {
+    $(".flex_wrap").on("click", () => {
+      // Calculate the height of .nav-title and .nav
+      const navTitleHeight = $(".nav-title").outerHeight();
+      const navHeight = $(".nav").outerHeight();
+      const hNavTotalHeight = navTitleHeight + navHeight;
+
+      // Toggle .nav visibility
+      $(".nav").toggle();
+
+      // Adjust .h-nav's height to match .nav-title and .nav
+      if ($(".nav").is(":visible")) {
+        $(".h-nav").css("height", hNavTotalHeight + "px");
+      } else {
+        $(".h-nav").css("height", "");
+      }
+    });
+  }
+});
+
 // 상단 nav 컨텍 팝업 열기
 $(function () {
   $(".sub-btn").on("click", () => {
