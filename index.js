@@ -35,7 +35,39 @@ $(window).on("scroll", () => {
   }
 });
 
-// main
+// ************************* main
+// section1 .m-banner 타이틀
+
+let typeSplit;
+
+function runSplit() {
+  typeSplit = new SplitType(".split-lines", {
+    types: "lines",
+    tagName: "span",
+  });
+  $(".split-lines .line").wrap("<span class='line-mask'></span>");
+  $(".split-lines").css("opacity", "1");
+}
+
+// Update on window resize
+let windowWidth = $(window).innerWidth();
+window.addEventListener("resize", function () {
+  if (windowWidth !== $(window).innerWidth()) {
+    windowWidth = $(window).innerWidth();
+    typeSplit.revert();
+    runSplit();
+  }
+});
+
+runSplit();
+
+let tl = gsap.timeline({ defaults: { ease: "power3.easeOut", duration: 0.7 } });
+
+tl.from(" .split-lines .line", {
+  yPercent: 100,
+  rotation: 7,
+  stagger: 0.1,
+});
 
 // 어바웃 미 버튼
 document

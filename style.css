@@ -84,6 +84,23 @@ main .m-banner .m-txt img {
   left: 23%;
 }
 
+/* section1 .m-banner 타이틀 이벤트 */
+.split-lines {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.split-lines .line-mask {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.split-lines .line-mask .line {
+  transform-origin: top left;
+  transform: rotate(0deg);
+}
+
 /* section1 .m-banner txt 미디어쿼리 */
 @media screen and (max-width: 1700px) {
   main .m-banner .m-txt h3 {
