@@ -111,22 +111,6 @@ main .skill .skillBox .tool p {
 
 main .skill .skillBox .tool .toolBox h4 {
   font-size: var(--font-size-18);
-  width: 90px;
-  height: 35px;
-}
-
-main .skill .skillBox .tool .tool-adobe .adobe {
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  align-items: center;
-}
-
-main .skill .skillBox .tool .tool-adobe .adobe .adobe-box {
-  margin-right: 20px;
-}
-
-main .skill .skillBox .tool .tool-adobe .block {
-  display: inline;
 }
 
 /********* section6 .answer *********/

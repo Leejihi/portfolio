@@ -536,6 +536,7 @@ main .career .careerBox .imgBox .careerImg {
 main .career .careerBox .txtBox {
   width: 100%;
 }
+
 main .career .careerBox .txtBox .jobBox {
   display: flex;
   gap: 30px;
@@ -545,17 +546,21 @@ main .career .careerBox .txtBox .jobBox {
   opacity: 0.7;
   transition: 0.3s;
 }
+
 main .career .careerBox .txtBox .jobBox:hover {
   opacity: 1;
   transform: translateX(15px);
 }
+
 main .career .careerBox .txtBox .jobBox h3 {
   font-weight: 500;
   font-size: var(--font-size-70);
 }
+
 main .career .careerBox .txtBox .jobBox .p-txt {
   font-family: var(--font-family-p);
 }
+
 main .career .careerBox .txtBox .jobBox .p-txt .title {
   font-size: var(--font-size-36);
   font-weight: 600;
@@ -678,6 +683,29 @@ main .skill .skillBox .tool .tool-adobe img {
 
 main .skill .skillBox .tool .tool-adobe .block {
   display: block;
+}
+
+/* section5 .skill 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  main .skill .skillBox .tool .toolBox h4 {
+    font-size: var(--font-size-20);
+    width: 7vw;
+    height: 35px;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .adobe {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    align-items: center;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .adobe .adobe-box {
+    margin-right: 20px;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .block {
+    display: inline;
+  }
 }
 
 /********* section6 .answer *********/
