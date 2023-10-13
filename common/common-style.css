@@ -304,13 +304,13 @@ header .sub-nav .sub-popup li:last-child a {
   }
 
   header .h-nav .nav-title h1 {
-    width: 50vw;
+    width: 150vw;
     height: 100px;
     text-indent: -9999px;
   }
 
   header .h-nav .nav-title h1 a {
-    background: url(../images/logo_white.png) no-repeat 3vw 2vw / 150px;
+    background: url(../images/logo_white.png) no-repeat 3vw 2vw / 130px;
   }
 
   /* 움직이는 햄버거메뉴 */
