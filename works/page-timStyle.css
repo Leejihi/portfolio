@@ -630,16 +630,21 @@ main {
 
 @media screen and (max-width: 1200px) {
   /* 03 */
+  .left .script .script-img .script-info .info-3-1 .bold {
+    margin-top: 5vw;
+  }
+
   .left .script .script-img .script-info .info-3-1 .info-tool {
     position: absolute;
     right: 0;
     margin-bottom: 1vw;
     margin-top: 1vw;
   }
+
   /* 05 */
   .left .script .script-img .script-info .info5-img,
   .left .script .script-img .script-info .info-5 {
-    margin-top: -10vw;
+    margin-top: 0;
   }
 }
 
