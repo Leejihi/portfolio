@@ -188,7 +188,7 @@ main {
 }
 
 .left .sub-button a:hover {
-  background-color: #0ecad3;
+  background-color: #fff;
   color: #000;
 }
 
@@ -382,8 +382,8 @@ main {
 .left .script .script-img {
   width: 100%;
   height: 220vh;
+  margin-bottom: 10vw;
 
-  margin-bottom: 5vw;
   position: relative;
 }
 
@@ -459,11 +459,6 @@ main {
   right: 0;
   margin-bottom: 1vw;
 }
-
-/* .left .script .script-img .script-info .info-1 img {
-  width: 70%;
-  margin: 3vw 0 1vw;
-} */
 
 .left .script .script-img .script-info .info-1 .bold {
   margin-top: 3vw;
@@ -597,7 +592,6 @@ main {
 }
 
 .left .script .script-img .script-info .info-4 .info-tool {
-  /* margin-bottom: 1vw; */
   width: 100px;
 }
 
@@ -610,12 +604,23 @@ main {
 }
 
 /* 05 */
+/* 05이미지 추가 */
+
+.left .script .script-img .script-info .info5-img {
+  grid-column: 1/5;
+  grid-row: 5/6;
+
+  width: 35%;
+
+  margin-top: -30vw;
+  margin-left: 10vw;
+}
 
 .left .script .script-img .script-info .info-5 {
   grid-column: 2/5;
   grid-row: 5/6;
 
-  margin-left: 10vw;
+  margin-left: 20vw;
   margin-top: -30vw;
 
   position: relative;
@@ -660,90 +665,6 @@ main {
   position: absolute;
   top: 20.5px;
   left: -3vw;
-}
-
-/******** git organization ********/
-.left .git {
-  width: 100%;
-  height: 30vw;
-  border-top: #000 solid 1px;
-  background-color: #000;
-  color: #fff;
-
-  position: relative;
-}
-
-.left .git .git-txt {
-  margin: 3vw 3vw 12vw;
-  display: flex;
-
-  position: relative;
-}
-
-.left .git .git-txt h4 {
-  font-size: var(--font-size-45);
-  font-weight: 700;
-  text-transform: uppercase;
-  width: 50%;
-  line-height: 1.4;
-  letter-spacing: 1px;
-}
-
-.left .git .git-txt .git-txtBox {
-  width: 100%;
-}
-
-.left .git .git-txt .git-txtBox p {
-  font-size: var(--font-size-18);
-  width: 45%;
-  line-height: 1.6;
-  margin: 0.4vw 0 2vw;
-
-  position: absolute;
-  right: 0;
-}
-
-.left .git .git-txtBox .git-button {
-  display: flex;
-  width: 45%;
-
-  background-color: #fff;
-  border: #fff 1px solid;
-
-  position: absolute;
-  right: 0;
-  bottom: -8vw;
-}
-
-.left .git .git-txtBox .git-button img {
-  width: 18.5%;
-}
-
-.left .git .git-txtBox .git-button .go-git {
-  width: 30px;
-
-  position: absolute;
-  top: 50%;
-  right: 1.5vw;
-  transform: translateY(-50%);
-}
-
-.left .git .git-txtBox .git-button .git-bTxt {
-  width: 130%;
-  position: absolute;
-  top: 10%;
-  right: 18%;
-}
-
-.left .git .git-txtBox .git-button .git-bTxt p {
-  font-size: var(--font-size-14);
-  color: #757575;
-}
-
-.left .git .git-txtBox .git-button .git-bTxt .bold {
-  font-size: var(--font-size-24);
-  color: #000;
-  font-weight: 700;
 }
 
 /******* 스타일가이드 ********/
