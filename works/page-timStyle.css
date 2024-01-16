@@ -626,28 +626,6 @@ main {
   position: relative;
 }
 
-/* 미디어쿼리 1000까지 */
-
-@media screen and (max-width: 1200px) {
-  /* 03 */
-  .left .script .script-img .script-info .info-3-1 .bold {
-    margin-top: 5vw;
-  }
-
-  .left .script .script-img .script-info .info-3-1 .info-tool {
-    position: absolute;
-    right: 0;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
-  }
-
-  /* 05 */
-  .left .script .script-img .script-info .info5-img,
-  .left .script .script-img .script-info .info-5 {
-    margin-top: 0;
-  }
-}
-
 .left .script .script-img .script-info .info-5 .info-tool {
   width: 100px;
 }
@@ -687,6 +665,28 @@ main {
   position: absolute;
   top: 20.5px;
   left: -3vw;
+}
+
+/* 미디어쿼리 1200까지 */
+
+@media screen and (max-width: 1200px) {
+  /* 03 */
+  .left .script .script-img .script-info .info-3-1 .bold {
+    margin-top: 5vw;
+  }
+
+  .left .script .script-img .script-info .info-3-1 .info-tool {
+    position: absolute;
+    right: 0;
+    margin-bottom: 5vw;
+    margin-top: 1vw;
+  }
+
+  /* 05 */
+  .left .script .script-img .script-info .info5-img,
+  .left .script .script-img .script-info .info-5 {
+    margin-top: 12vw;
+  }
 }
 
 /* 스타일가이드 */
