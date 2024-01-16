@@ -788,12 +788,15 @@ main {
 
 .left .publishing .ox-box {
   width: 100%;
+
   display: flex;
-  margin: 7vw auto;
+  margin: 3vw auto 5vw;
   align-items: center;
 
   font-size: var(--font-size-18);
   line-height: 1.5;
+
+  position: relative;
 }
 
 .left .publishing .ox-box .line-center {
@@ -811,8 +814,13 @@ main {
   margin-bottom: 3.5vw;
 }
 
-.left .publishing .ox-box {
-  position: relative;
+.left .publishing .ox-box .problem {
+  width: 50%;
+  margin-left: 4vw;
+}
+
+.left .publishing .ox-box .solution {
+  width: 50%;
 }
 
 .left .publishing .ox-box .problem li {
