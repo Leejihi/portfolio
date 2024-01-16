@@ -309,7 +309,7 @@ main {
   margin-bottom: 5px;
 }
 
-.left .before .before-img .before-txt li:hover {
+.left .before .before-img:hover .before-txt li {
   background-color: #f6d83a;
   color: #000;
 }
