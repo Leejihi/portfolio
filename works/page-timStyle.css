@@ -668,6 +668,12 @@ main {
 
 /* 미디어쿼리 1200까지 */
 
+@media screen and (max-width: 1700px) {
+  .left .script .script-img .script-info .info-3-1 .info-tool {
+    margin-top: 4vw;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   /* 03  */
   .left .script .script-img .script-info .info-3-1 .bold {
@@ -675,9 +681,7 @@ main {
   }
 
   .left .script .script-img .script-info .info-3-1 .info-tool {
-    position: absolute;
-    right: 0;
-    margin-top: 7vw;
+    margin-top: 15vw;
   }
 
   /* 05 */
