@@ -534,11 +534,20 @@ main {
 .left .script .script-img .script-info .info-3-1 .info-tool {
   position: absolute;
   right: 0;
-  margin-top: 7vw;
+  margin-top: 8vw;
 }
 
 .left .script .script-img .script-info .info-3-1 .bold {
   margin-top: 3vw;
+}
+
+/* 03 미디어쿼리 1200까지 */
+
+@media screen and (max-width: 1200px) {
+  /* 03  */
+  .left .script .script-img .script-info .info-3-1 .info-tool {
+    margin-top: 18vw;
+  }
 }
 
 .left .script .script-img .script-info .info-3-2 {
@@ -611,8 +620,8 @@ main {
 
   width: 35%;
 
-  margin-top: -20vw;
   margin-left: 10vw;
+  margin-top: -18vw;
 }
 
 .left .script .script-img .script-info .info-5 {
@@ -620,7 +629,7 @@ main {
   grid-row: 5/6;
 
   margin-left: 20vw;
-  margin-top: -20vw;
+  margin-top: -18vw;
 
   position: relative;
 }
@@ -664,22 +673,6 @@ main {
   position: absolute;
   top: 20.5px;
   left: -3vw;
-}
-
-/* 미디어쿼리 1200까지 */
-
-@media screen and (max-width: 1200px) {
-  /* 03  */
-  .left .script .script-img .script-info .info-3-1 .info-tool {
-    margin-top: 18vw;
-  }
-
-  /* 05 
-  .left .script .script-img .script-info .info5-img,
-  .left .script .script-img .script-info .info-5 {
-    margin-top: 12vw;
-  }
-  */
 }
 
 /* 스타일가이드 */
