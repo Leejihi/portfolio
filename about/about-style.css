@@ -83,7 +83,7 @@ main .m-banner .haker-banner .p-text p:last-child {
 /* 작업 키워드 */
 main .m-keyword {
   width: 80%;
-  margin: 10vw auto 15vw;
+  margin: 10vw auto;
 }
 
 main .m-keyword .keyword1 {
