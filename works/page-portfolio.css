@@ -173,32 +173,159 @@ main {
 /* 메인배너 */
 .left .m-banner {
   width: 100%;
-  height: 78.5vh;
+  height: 88vh;
   text-indent: -999999px;
-  background: url(./images/me2.gif) no-repeat -38vw 18vw / 100%,
+  background: url(./images/me2.gif) no-repeat -38vw 17vw / 100%,
     url(./images/page_bg.gif) no-repeat 50% 10vh/ 100%;
 }
 
 .left .m-title {
-  width: 100%;
-  height: 17.5vw;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-
-  display: grid;
-  place-content: center;
+  width: 90%;
+  margin: 3vw auto 8vw;
 }
 
 .left .m-title h3 {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-85);
   font-weight: 700;
-  margin-bottom: 0.5vw;
+  margin-bottom: -0.5vw;
+}
+
+.left .m-title .point-txt {
+  font-family: var(--font-family-point);
+  letter-spacing: 0.4rem;
 }
 
 .left .m-title p {
-  font-size: var(--font-size-17);
+  font-size: var(--font-size-18);
   margin-bottom: 0.5vw;
+}
+
+.left .m-title > .line {
+  border-top: #000 2px solid;
+  margin-top: 2vw;
+  padding-top: 1.5vw;
+}
+
+/* 포인트: 키워드&타겟 */
+.left .m-point {
+  width: 100%;
+  height: 60vh;
+  background: url(../images/idea1.gif) no-repeat 100% 50% / 28%;
+
+  text-align: center;
+  padding-left: 7%;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.left .m-point:hover {
+  background: url(../images/idea2.gif) no-repeat 100% 50% / 28%;
+}
+
+.left .m-point .point {
+  width: 21vw;
+  height: 21vw;
+  border-radius: 50%;
+  border: #000 1px solid;
+  padding-top: 8%;
+
+  font-size: var(--font-size-15);
+  line-height: 1.4;
+}
+
+.left .m-point h5 {
+  font-size: var(--font-size-17);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.left .m-point .title {
+  font-size: var(--font-size-27);
+  font-weight: 700;
+  margin-top: 12px;
+  line-height: 2.5vw;
+}
+
+.left .m-point .point .sub-title {
+  font-size: var(--font-size-22);
+  margin-bottom: 15px;
+}
+
+.left .m-point .point:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+}
+
+.left .m-point .point:nth-child(2):hover {
+  background-color: #000;
+  color: #f6d83a;
+}
+
+.left .m-point .point:first-child:hover {
+  background-color: #f6d83a;
+  color: #000;
+}
+
+/* direction */
+
+.left .direction {
+  width: 100%;
+  margin-bottom: 35vw;
+}
+
+.left .direction .direction-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.left .direction .direction-title .vertical-line {
+  width: 2.8125rem;
+  height: 13.625rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+
+  opacity: 0;
+
+  margin: 6vw auto;
+}
+
+.left .direction .direction-title .vertical-line.start {
+  opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+}
+
+.left .direction .direction-title h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-55);
+}
+
+.left .direction .direction-title h3 {
+  font-size: var(--font-size-64);
+  margin: 15px auto;
+}
+
+.left .direction .direction-title p {
+  font-size: var(--font-size-20);
+  line-height: 1.6;
+}
+
+.left .direction .renew-box {
+  width: 100%;
+  margin: 8vw auto;
+
+  position: relative;
+}
+
+.left .direction .renew-box img {
+  width: 50%;
+
+  position: absolute;
+  left: 30%;
 }
 
 /* 스타일가이드 */
