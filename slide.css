@@ -10,6 +10,10 @@
 @import url(./common/variable.css);
 
 /* 캐릭터 슬라이더 myWeb3 */
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
 
 main .myWeb3 {
   width: 100%;
