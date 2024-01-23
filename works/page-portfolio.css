@@ -176,7 +176,7 @@ main {
   height: 88vh;
   text-indent: -999999px;
   background: url(./images/me2.gif) no-repeat -38vw 17vw / 100%,
-    url(./images/page_bg.gif) no-repeat 50% 10vh/ 100%;
+    url(./images/page_bg.gif) no-repeat 50%/ 100%;
 }
 
 .left .m-title {
