@@ -343,6 +343,19 @@ main {
   margin-bottom: 0.5vw;
 }
 
+/* renew-txt txt3 디테일 */
+
+.left .direction .renew-box .txt3 {
+  height: 50vh;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+}
+
+.left .direction .renew-box .txt3 .txtBox {
+  background: url(../images/me3.gif) no-repeat 50% 100% / 100%;
+}
+
 /* 스타일가이드 */
 .left .style {
   width: 100%;
