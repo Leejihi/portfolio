@@ -272,7 +272,7 @@ main {
 
 .left .direction {
   width: 100%;
-  margin-bottom: 35vw;
+  margin-bottom: var(--margin);
 }
 
 .left .direction .direction-title {
