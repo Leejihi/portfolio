@@ -314,18 +314,33 @@ main {
   line-height: 1.6;
 }
 
+/* 이미지와 글자 위치 작업 */
 .left .direction .renew-box {
   width: 100%;
-  margin: 8vw auto;
+  margin: 3vw auto 0;
 
   position: relative;
 }
 
-.left .direction .renew-box img {
-  width: 50%;
+.left .direction .renew-box .renew-txt {
+  line-height: 1.5;
+  display: flex;
+  gap: 1vw;
+}
 
-  position: absolute;
-  left: 30%;
+.left .direction .renew-box .renew-txt p {
+  font-size: var(--font-size-22);
+  font-weight: 400;
+}
+
+.left .direction .renew-box .renew-txt .bold {
+  font-size: var(--font-size-22);
+  font-weight: 700;
+}
+
+.left .direction .renew-box .renew-txt .txtBox img {
+  width: 13.5vw;
+  margin-bottom: 0.5vw;
 }
 
 /* 스타일가이드 */
