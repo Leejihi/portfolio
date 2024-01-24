@@ -44,10 +44,46 @@
 
 // 캐릭터 슬라이더 팝업 열기
 $(function () {
-  $(".sub-btn").on("click", () => {
-    $(".sub-popup").show();
+  $(".cell01").on("click", () => {
+    $(".popup-bg1").show();
   });
-  $(".close-btn").on("click", () => {
-    $(".sub-popup").hide();
+  $(".closed").on("click", () => {
+    $(".popup-bg1").hide();
+  });
+});
+
+$(function () {
+  $(".cell02").on("click", () => {
+    $(".popup-bg2").show();
+  });
+  $(".closed").on("click", () => {
+    $(".popup-bg2").hide();
+  });
+});
+
+$(function () {
+  $(".cell03").on("click", () => {
+    $(".popup-bg3").show();
+  });
+  $(".closed").on("click", () => {
+    $(".popup-bg3").hide();
+  });
+});
+
+$(function () {
+  $(".cell04").on("click", () => {
+    $(".popup-bg4").show();
+  });
+  $(".closed").on("click", () => {
+    $(".popup-bg4").hide();
+  });
+});
+
+$(function () {
+  $(".cell05").on("click", () => {
+    $(".popup-bg5").show();
+  });
+  $(".closed").on("click", () => {
+    $(".popup-bg5").hide();
   });
 });
