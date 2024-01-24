@@ -41,3 +41,13 @@
     });
   });
 })(jQuery);
+
+// 캐릭터 슬라이더 팝업 열기
+$(function () {
+  $(".sub-btn").on("click", () => {
+    $(".sub-popup").show();
+  });
+  $(".close-btn").on("click", () => {
+    $(".sub-popup").hide();
+  });
+});
