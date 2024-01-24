@@ -33,11 +33,13 @@
     <link rel="stylesheet" href="./style-miniPC.css" media="(max-width:1400px)">
     <!-- 테블릿 버전 -->
     <link rel="stylesheet" href="./style-tablet.css" media="(max-width:999px)">
+    <!-- 캐릭터 슬라이더 -->
+    <link rel="stylesheet" href="./slide.css">
 
     <!-- jQuery -->
     <script src="./common/jquery-3.7.0.min.js"></script>
 
-    <!-- 밑줄효과 -->
+    <!-- 밑줄효과 js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./common/header.js"></script>
     <script defer src="./index.js"></script>
@@ -47,6 +49,16 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- 슬라이더 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+
+    <!-- 내가 작성한 js -->
+    <script defer src="./common/header.js"></script>
+    <script defer src="./index.js"></script>
+    <!-- 캐릭터 슬라이더 -->
+    <script defer src="./slide.js"></script>
 </head>
 
 <body>
@@ -72,7 +84,7 @@
                 </menu>
                 <ul class="h-sns">
                     <li><a href="https://github.com/Leejihi/portfolio" target="_blank">깃허브로고</a></li>
-                    <li><a href="#">카카오톡로고</a></li>
+                    <li><a href="https://pf.kakao.com/_nzLzG" target="_blank">카카오톡로고</a></li>
                 </ul>
             </div>
         </div>
@@ -187,7 +199,261 @@
             </div>
         </section>
 
+        <!-- section 캐릭터 슬라이더-->
+        <section class="myWeb3">
+            <div class="ag-container-shops">
+                <div class="js-flickity-slider">
 
+                    <div class="js-carousel-cell cell01">
+                        <div class="ag-shop-card_box-wrap">
+                            <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                    <div class="js-card-bg ag-card-bg"
+                                        style="background-image: url(./images/character_ebg1.png);">
+                                    </div>
+
+                                    <div class="ag-shop-card-body_link"><img src="./images/character_ebg2.png"
+                                            alt="ebg 영어 교습소 로고" class="ag-shop-card-body_img"></div>
+                                </div>
+
+                                <div class="ag-shop-card_footer">
+                                    <div class="ag-shop-card-footer_link"><img
+                                            src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg"
+                                            class="ag-shop-card-footer_arrow"></div>
+                                    <span class="ag-shop-card-footer_title">캐릭터 | E.B.G 영어 친구들</span>
+                                    <span class="ag-shop-card-footer_products">이비지 영어 교습소</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-carousel-cell cell02">
+                        <div class="ag-shop-card_box-wrap">
+                            <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                    <div class="js-card-bg ag-card-bg"
+                                        style="background-image: url(./images/character_kt1.png);">
+                                    </div>
+
+                                    <div class="ag-shop-card-body_link"><img src="./images/character_kt2.png"
+                                            alt="kt wiz 로고" class="ag-shop-card-body_img"></div>
+                                </div>
+
+                                <div class="ag-shop-card_footer">
+                                    <div class="ag-shop-card-footer_link"><img
+                                            src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg"
+                                            class="ag-shop-card-footer_arrow"></div>
+                                    <span class="ag-shop-card-footer_title">캐릭터 | 빅또리 미니버젼</span>
+                                    <span class="ag-shop-card-footer_products">케이티 위즈 마스코트 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-carousel-cell cell03">
+                        <div class="ag-shop-card_box-wrap">
+                            <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                    <div class="js-card-bg ag-card-bg"
+                                        style="background-image: url(./images/character_ace1.png);">
+                                    </div>
+
+                                    <div class="ag-shop-card-body_link"><img src="./images/character_ace2.png"
+                                            alt="에이스익스프레스 로고" class="ag-shop-card-body_img"></div>
+                                </div>
+
+                                <div class="ag-shop-card_footer">
+                                    <div class="ag-shop-card-footer_link"><img
+                                            src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg"
+                                            class="ag-shop-card-footer_arrow"></div>
+                                    <span class="ag-shop-card-footer_title">캐릭터 | ACE 라마</span>
+                                    <span class="ag-shop-card-footer_products">ACE 익스프레스</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-carousel-cell cell04">
+                        <div class="ag-shop-card_box-wrap">
+                            <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                    <div class="js-card-bg ag-card-bg"
+                                        style="background-image: url(./images/character_hada1.png);">
+                                    </div>
+
+                                    <div class="ag-shop-card-body_link"><img src="./images/character_hada2.png"
+                                            alt="나는하다 로고" class="ag-shop-card-body_img"></div>
+                                </div>
+
+                                <div class="ag-shop-card_footer">
+                                    <div class="ag-shop-card-footer_link"><img
+                                            src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg"
+                                            class="ag-shop-card-footer_arrow"></div>
+                                    <span class="ag-shop-card-footer_title">캐릭터 | 옐로우, 레드, 블루</span>
+                                    <span class="ag-shop-card-footer_products">(주)펀앤조이</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-carousel-cell cell05">
+                        <div class="ag-shop-card_box-wrap">
+                            <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                    <div class="js-card-bg ag-card-bg"
+                                        style="background-image: url(./images/character_fun1.png);">
+                                    </div>
+
+                                    <div class="ag-shop-card-body_link"><img src="./images/character_fun2.png"
+                                            alt="펀앤조이 로고" class="ag-shop-card-body_img"></div>
+                                </div>
+
+                                <div class="ag-shop-card_footer">
+                                    <div class="ag-shop-card-footer_link"><img
+                                            src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg"
+                                            class="ag-shop-card-footer_arrow"></div>
+                                    <span class="ag-shop-card-footer_title">캐릭터 | 하다 친구들</span>
+                                    <span class="ag-shop-card-footer_products">I’m HADA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 캐릭터 팝업창 -->
+        <section class="ag-container-popup popup-bg1">
+
+            <div class="popup-bg">
+                <div class="small-box1">
+                    <img src="./images/character_ebg3.png" alt="ebg 영어교습소 사용화된 이미지">
+                </div>
+
+                <div class="small-box2">
+                    <div class="closed">
+                        <p>X</p>
+                    </div>
+
+                    <div class="bg-img bg-img1">캐릭터이미지</div>
+
+                    <div class="bg-txt">
+                        <p class="title">E.B.G 영어 친구들</p>
+                        <p class="sub-title">EBG 영어 교습소 브랜딩 / 작업기여도 100% / 상용화</p>
+                        <p>초등학교 저학년을 대상으로 보드게임을 통한 영어수업을 진행하는 EBG 영어교습소만의 교육방법을 담아 마치 어린이의 그림처럼 표현했습니다.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ag-container-popup popup-bg2">
+
+            <div class="popup-bg">
+                <div class="small-box1">
+                    <img src="./images/character_kt3.png" alt="kt wiz 빅또리 리뉴얼 이미지">
+                </div>
+
+                <div class="small-box2">
+                    <div class="closed">
+                        <p>X</p>
+                    </div>
+
+                    <div class="bg-img bg-img2">캐릭터이미지</div>
+
+                    <div class="bg-txt">
+                        <p class="title">빅또리 미니 버젼</p>
+                        <p class="sub-title">kt wiz / 작업기여도 100% / 상용화</p>
+                        <p>야구장에 길다란 스크린이 설치되었는데 그곳에 사용될 캐릭터 의뢰를 받아
+                            기존 빅또리의 미니 버젼작업 진행 <br>sns, 구장 안내 등 다양한 곳에 사용
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ag-container-popup popup-bg3">
+
+            <div class="popup-bg">
+                <div class="small-box1">
+                    <img src="./images/character_ace3.png" alt="ace 캐릭터 활용 이미지">
+                </div>
+
+                <div class="small-box2">
+                    <div class="closed">
+                        <p>X</p>
+                    </div>
+
+                    <div class="bg-img bg-img3">캐릭터이미지</div>
+
+                    <div class="bg-txt">
+                        <p class="title">ACE 라마</p>
+                        <p class="sub-title">ACE 익스프레스 브랜딩 / 작업기여도 100% / 상용화</p>
+                        <p>라마를 닮은 대표님을 닮은 캐릭터로 친근함 강조
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ag-container-popup popup-bg4">
+
+            <div class="popup-bg">
+                <div class="small-box1">
+                    <img src="./images/character_hada3.png" alt="hada 캐릭터 이미지">
+                </div>
+
+                <div class="small-box2">
+                    <div class="closed">
+                        <p>X</p>
+                    </div>
+
+                    <div class="bg-img bg-img4">하다 친구들</div>
+
+                    <div class="bg-txt">
+                        <p class="title">하다 친구들</p>
+                        <p class="sub-title">I’m HADA / 작업기여도 100% / 개인작업</p>
+                        <p>개인브랜드를 만들고자 브랜딩 작업 과정에서 진행했던 사탕캐릭터.
+                            상상만으로도 즐거움을 주는 각각의 모양과 맛이 다른 사탕으로
+                            나는 “어떤것이든, 무엇이든” 할수있고 될 수 있다는 긍정 브랜드를 표현
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ag-container-popup popup-bg5">
+
+            <div class="popup-bg">
+                <div class="small-box1">
+                    <img src="./images/character_fun3.png" alt="펀앤조이 캐릭터 이미지">
+                </div>
+
+                <div class="small-box2">
+                    <div class="closed">
+                        <p>X</p>
+                    </div>
+
+                    <div class="bg-img bg-img5">펀앤조이 캐릭터</div>
+
+                    <div class="bg-txt">
+                        <p class="title">옐로우, 레드, 블루</p>
+                        <p class="sub-title">(주)펀앤조이 캐릭터 / 작업기여도 100% / 상용화</p>
+                        <p>반죽하여 비누의 형태를 원하는대로 만들 수 있는 쪼물락 비누를
+                            쉽게 설명하기 위해 캐릭터 작업 진행
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 커리어 -->
         <section class="career">
             <h2>My Career</h2>
 
