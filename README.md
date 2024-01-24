@@ -6,7 +6,7 @@
 
 __프로젝트 기간: 2023.06.25 ~ 2023.08.03__
 
-__KEYWORD: #KITSCH #BLACK&WHITE #SIMPLE__
+__KEYWORD:  #ILLUSTRATION #BLACK&WHITE #KITSCH__
 
 포트폴리오 작업 기록
 
@@ -34,14 +34,12 @@ __KEYWORD: #KITSCH #BLACK&WHITE #SIMPLE__
 | 23.07.31 | Tim Walker 웹 글자이벤트: unpkg: npm 패키지들을 올려둔 CDN을 사용하여 글자 이벤트 |
 | 23.08.01~08.02 | Tim Walker 슬라이드: ScrollTrigger, height, transfrom: scale3d 값으로 구현 |
 | 23.08.03 | 포트폴리오 작업일지 정리 |
-| 24.01.10 | Vans 설명 페이지: 내용 작성 및 이미지 편집 |
-| 24.01.11 | Vans 설명 페이지 HTML, CSS, JavaScript |
-| 24.01.12 | Tim Walker 설명 페이지: 내용 작성 및 이미지 편집 |
-| 24.01.15 | Tim Walker 설명 페이지: 기술정리 및 기술서 작성 |
-| 24.01.16 | Tim Walker 설명 페이지: HTML, CSS, JavaScript, 기술서 연결 |
+| 24.01.10~01.11 | Vans 설명 페이지: 내용 작성 및 이미지 편집, HTML, CSS, JavaScript |
+| 24.01.12~01.16 | Tim Walker 설명 페이지: 내용 작성 및 이미지 편집, 기술서 작성, 코딩 |
 | 24.01.18 | about me 페이지: 작업시 중점이 되는 포인트 3가지 정리하여 시안작업 및 코딩 |
-| 24.01.19 | 포트폴리오 설명페이지: 리디자인 |
-| 24.01.23 | 포트폴리오 설명페이지: 수정 이미지 작업 및 코딩  |
+| 24.01.19~01.20 | 포트폴리오 설명페이지: 리디자인, 수정 이미지 작업 및 코딩 |
+| 24.01.23~01.24 | index 페이지 캐릭터 슬라이더 추가: 캐릭터 팝업, 슬라이더 작업 완료 |
+
 
 ## Web Project
 
