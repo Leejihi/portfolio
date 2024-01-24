@@ -343,17 +343,39 @@ main {
   margin-bottom: 0.5vw;
 }
 
-/* renew-txt txt3 디테일 */
+/* renew-txt txt1 디테일 */
 
-.left .direction .renew-box .txt3 {
+.left .direction .renew-box .txt1 {
   height: 50vh;
   position: absolute;
-  top: 60%;
-  right: 10%;
+  top: 32%;
+  right: 7%;
 }
 
-.left .direction .renew-box .txt3 .txtBox {
+.left .direction .renew-box .txt1 .txtBox {
   background: url(../images/me3.gif) no-repeat 50% 100% / 100%;
+}
+
+/* renew-txt txt2 디테일 */
+.left .direction .renew-box .txt2 {
+  height: 10vh;
+  position: absolute;
+  bottom: 33%;
+  right: 45%;
+
+  gap: 1vw;
+}
+
+.left .direction .renew-box .txt2 .txtBox img {
+  width: 7.5vw;
+  margin-bottom: 0.5vw;
+}
+
+/* renew-txt txt3 디테일 */
+.left .direction .renew-box .txt3 {
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
 }
 
 /* 스타일가이드 */
